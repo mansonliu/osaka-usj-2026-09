@@ -1,0 +1,217 @@
+{
+  "route": {
+    "origin": "TPE",
+    "origin_name": "臺北",
+    "destination": "KIX",
+    "destination_name": "大阪",
+    "trip_type": "outbound_only_listed",
+    "currency": "TWD"
+  },
+  "captured_at_note": "資料來自手機截圖，時間戳為截圖當下；票價為動態資料，僅供當下參考。",
+  "important_notes": [
+    "Google Flights 顯示的金額標註為「來回票價」(round trip)。",
+    "StarLux 官網顯示的為「去程」單程方向的票價 (起價, 起)。",
+    "兩個 Google 截圖（5:28 與 5:29）為相同航班但票價明顯不同：5:29 那張套用了『中華航空 + 轉機次數=1』篩選；5:28 那張未顯示篩選 chip。兩者價差大，可能為不同篩選條件或頁面狀態，比價時需注意。",
+    "排放量百分比為相對於該航線平均值的差異。"
+  ],
+  "sources": [
+    {
+      "source_id": "IMG_0381",
+      "provider": "Google Flights",
+      "domain": "google.com",
+      "screenshot_time": "17:29",
+      "price_basis": "round_trip",
+      "search_context": {
+        "date_outbound": "2026-09-25",
+        "date_return": "2026-09-28",
+        "filters": ["中華航空", "轉機次數=1"],
+        "tab": "最佳",
+        "lowest_price_from": 37873,
+        "price_assessment": "目前的價格較高"
+      },
+      "flights": [
+        {
+          "airline": "中華航空",
+          "depart_time": "14:20",
+          "arrive_time": "18:05",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "price_twd": 40654,
+          "cabin": "經濟艙",
+          "emissions": "平均排放量",
+          "warnings": ["分段購票"]
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "09:00",
+          "arrive_time": "12:50",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時50分鐘",
+          "price_twd": 44437,
+          "cabin": "經濟艙",
+          "emissions": "平均排放量",
+          "warnings": []
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "08:15",
+          "arrive_time": "12:00",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "price_twd": 50984,
+          "cabin": "商務艙",
+          "emissions": "比一般排放量高出305%",
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "source_id": "IMG_0380",
+      "provider": "Google Flights",
+      "domain": "google.com",
+      "screenshot_time": "17:28",
+      "price_basis": "round_trip",
+      "search_context": {
+        "date_outbound": null,
+        "date_return": null,
+        "filters": [],
+        "tab": null,
+        "cheaper_alternative": {
+          "date_range": "2026-09-27 至 2026-09-30",
+          "price_twd": 14217
+        },
+        "price_tracking_range": "2026-09-24 至 2026-09-27"
+      },
+      "flights": [
+        {
+          "airline": "中華航空",
+          "depart_time": "14:20",
+          "arrive_time": "18:05",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "price_twd": 21884,
+          "cabin": "經濟艙",
+          "emissions": "平均排放量",
+          "warnings": []
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "09:00",
+          "arrive_time": "12:50",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時50分鐘",
+          "price_twd": 25037,
+          "cabin": "經濟艙",
+          "emissions": "比一般排放量高出6%",
+          "warnings": []
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "08:15",
+          "arrive_time": "12:00",
+          "from": "TPE",
+          "to": "KIX",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "price_twd": 36628,
+          "cabin": "商務艙",
+          "emissions": "比一般排放量高出326%",
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "source_id": "IMG_0379",
+      "provider": "StarLux Airlines (星宇航空)",
+      "domain": "starlux-airlines.com",
+      "screenshot_time": "17:26",
+      "price_basis": "one_way_outbound",
+      "search_context": {
+        "date_outbound": "2026-09-25",
+        "day_of_week": "週五",
+        "day_lowest_price_twd": 37129
+      },
+      "flights": [
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX820",
+          "date": "2026-09-25",
+          "depart_time": "08:30",
+          "arrive_time": "12:15",
+          "from": "TPE",
+          "to": "KIX",
+          "duration": "2小時45分鐘",
+          "co2e_kg": 146,
+          "cabin": "經濟艙",
+          "price_twd_from": 37129
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX822",
+          "date": "2026-09-25",
+          "depart_time": "10:15",
+          "arrive_time": "14:00",
+          "from": "TPE",
+          "to": "KIX",
+          "duration": "2小時45分鐘",
+          "co2e_kg": 147,
+          "cabin": "商務艙",
+          "price_twd_from": 48937
+        }
+      ]
+    },
+    {
+      "source_id": "IMG_0378",
+      "provider": "StarLux Airlines (星宇航空)",
+      "domain": "starlux-airlines.com",
+      "screenshot_time": "17:25",
+      "price_basis": "one_way_outbound",
+      "search_context": {
+        "date_outbound": "2026-09-24",
+        "day_of_week": "週四",
+        "day_lowest_price_twd": 37129,
+        "adjacent_days": {
+          "2026-09-23": 34345
+        }
+      },
+      "flights": [
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX820",
+          "date": "2026-09-24",
+          "depart_time": "08:30",
+          "arrive_time": "12:15",
+          "from": "TPE",
+          "to": "KIX",
+          "duration": "2小時45分鐘",
+          "co2e_kg": 146,
+          "cabin": "經濟艙",
+          "price_twd_from": 37129
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX822",
+          "date": "2026-09-24",
+          "depart_time": "10:15",
+          "arrive_time": "14:00",
+          "from": "TPE",
+          "to": "KIX",
+          "duration": "2小時45分鐘",
+          "co2e_kg": 147,
+          "cabin": "經濟艙",
+          "price_twd_from": 37129
+        }
+      ]
+    }
+  ]
+}

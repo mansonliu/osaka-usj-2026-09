@@ -1,0 +1,180 @@
+{
+  "route": {
+    "origin": "TPE",
+    "origin_name": "臺北",
+    "destination": "KIX",
+    "destination_name": "大阪",
+    "trip_length_days": 4,
+    "currency": "TWD"
+  },
+  "captured_at_note": "資料來自手機截圖；票價為動態浮動資料，僅供截圖當下參考。",
+  "all_prices_are": "round_trip",
+  "important_notes": [
+    "僅保留兩種 4 天行程組合：9/24→9/27、9/25→9/28；已排除 9/24→9/28(5天) 與 9/25→9/27(3天)。",
+    "所有票價皆為來回價、直達航班。",
+    "星宇截圖未顯示回程日期，假設對應 4 天行程(9/24組回9/27、9/25組回9/28)；若實際回程日不同需校正。",
+    "中華 9/25→9/28 的 14:20 經濟票($40,654)需『分段購票』，行李與改簽風險較高。",
+    "Google Flights 畫面中的『1』為已套用 1 個篩選(中華航空)，非轉機次數。",
+    "排放量百分比為相對於該航線平均值的差異。"
+  ],
+  "trips": [
+    {
+      "trip_id": "2026-09-24_to_2026-09-27",
+      "depart_date": "2026-09-24",
+      "return_date": "2026-09-27",
+      "options": [
+        {
+          "airline": "中華航空",
+          "depart_time": "14:20",
+          "arrive_time": "18:05",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 21884,
+          "emissions": "平均排放量",
+          "warnings": [],
+          "is_lowest": true,
+          "source_id": "IMG_0380 / IMG_0382"
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "09:00",
+          "arrive_time": "12:50",
+          "stops": "直達",
+          "duration": "2小時50分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 25037,
+          "emissions": "比一般排放量高出6%",
+          "warnings": [],
+          "source_id": "IMG_0380 / IMG_0382"
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "08:15",
+          "arrive_time": "12:00",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "商務艙",
+          "price_twd": 36628,
+          "emissions": "比一般排放量高出326%",
+          "warnings": [],
+          "source_id": "IMG_0380 / IMG_0382"
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX820",
+          "depart_time": "08:30",
+          "arrive_time": "12:15",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 37129,
+          "co2e_kg": 146,
+          "warnings": ["回程日期未顯示於截圖，假設為9/27"],
+          "source_id": "IMG_0378"
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX822",
+          "depart_time": "10:15",
+          "arrive_time": "14:00",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 37129,
+          "co2e_kg": 147,
+          "warnings": ["回程日期未顯示於截圖，假設為9/27"],
+          "source_id": "IMG_0378"
+        }
+      ]
+    },
+    {
+      "trip_id": "2026-09-25_to_2026-09-28",
+      "depart_date": "2026-09-25",
+      "return_date": "2026-09-28",
+      "options": [
+        {
+          "airline": "中華航空",
+          "depart_time": "14:20",
+          "arrive_time": "18:05",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 40654,
+          "emissions": "平均排放量",
+          "warnings": ["分段購票"],
+          "source_id": "IMG_0381"
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "09:00",
+          "arrive_time": "12:50",
+          "stops": "直達",
+          "duration": "2小時50分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 44437,
+          "emissions": "平均排放量",
+          "warnings": [],
+          "source_id": "IMG_0381"
+        },
+        {
+          "airline": "中華航空",
+          "depart_time": "08:15",
+          "arrive_time": "12:00",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "商務艙",
+          "price_twd": 50984,
+          "emissions": "比一般排放量高出305%",
+          "warnings": [],
+          "source_id": "IMG_0381"
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX820",
+          "depart_time": "08:30",
+          "arrive_time": "12:15",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "經濟艙",
+          "price_twd": 37129,
+          "co2e_kg": 146,
+          "is_lowest": true,
+          "warnings": ["回程日期未顯示於截圖，假設為9/28"],
+          "source_id": "IMG_0379"
+        },
+        {
+          "airline": "星宇航空",
+          "flight_number": "JX822",
+          "depart_time": "10:15",
+          "arrive_time": "14:00",
+          "stops": "直達",
+          "duration": "2小時45分鐘",
+          "cabin": "商務艙",
+          "price_twd": 48937,
+          "co2e_kg": 147,
+          "warnings": ["回程日期未顯示於截圖，假設為9/28"],
+          "source_id": "IMG_0379"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "cheapest_overall": {
+      "trip_id": "2026-09-24_to_2026-09-27",
+      "airline": "中華航空",
+      "depart_time": "14:20",
+      "cabin": "經濟艙",
+      "price_twd": 21884
+    },
+    "cheapest_per_trip": {
+      "2026-09-24_to_2026-09-27": { "airline": "中華航空", "cabin": "經濟艙", "price_twd": 21884 },
+      "2026-09-25_to_2026-09-28": { "airline": "星宇航空", "cabin": "經濟艙", "price_twd": 37129 }
+    },
+    "observations": [
+      "9/24 出發整組明顯較便宜，經濟最低 $21,884，約為 9/25 出發最低($37,129)的六成。",
+      "9/24 組中華勝星宇(經濟 21,884 vs 37,129)。",
+      "9/25 組星宇反而勝中華(37,129 vs 40,654)，且中華便宜票需分段購票。"
+    ]
+  }
+}
