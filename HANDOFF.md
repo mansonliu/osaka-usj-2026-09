@@ -4,10 +4,12 @@
 > 完整規劃見 `README.md`；機票原始數據在 `data/`。
 
 ## 對外網頁（給家人看）
-- 公開網址：**https://mansonliu.github.io/osaka-usj-2026-09/**（GitHub Pages，main 分支根目錄 `/index.html`）。
-- `index.html` = README 內容做成的響應式單頁（手機/平板/桌機自適應、暗色相容），含 `<meta name="robots" content="noindex">`→不被搜尋引擎收錄，等於「拿到網址才看得到」。
+- 公開網址：**https://mansonliu.github.io/osaka-usj-2026-09/**（GitHub Pages，部署來源＝GitHub Actions）。
+- **README.md 是唯一來源**。`build.py` 把 README 轉成響應式單頁（手機/平板/桌機自適應、暗色相容、`noindex` 不被搜尋引擎收錄）。`index.html`/`_site/` 為自動產物，已 gitignore、不進 git。
+- 維護：**只改 `README.md` → `git push`**。`.github/workflows/pages.yml` 會自動建置並部署，約 1–2 分鐘後線上更新。完全不用碰 HTML。
+- 轉檔規則（在 build.py）：blockquote→callout（含 ⚠/🔴 轉橘色 warn）、表格自動包橫向捲動。想改版面就改 build.py 的 CSS。
+- 本機預覽（非必要）：`pip install markdown && python3 build.py` → 開 `_site/index.html`。
 - ⚠ **repo 必須維持公開**：免費帳號私人 repo 不能跑 Pages，一改私人網站立刻掛。
-- 維護：改 `index.html`（內容若大改記得同步 `README.md`，目前兩份各自獨立）→ `git push`，約 1 分鐘後線上自動更新。
 
 ## 任務一句話
 2026/9 帶家人（2 大人 + 13 歲女 + 11 歲男）去大阪環球影城（USJ），影城為主、住影城官方飯店、舒適不趕、含快速通關。比機票/飯店/門票價格後給最佳方案。

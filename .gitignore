@@ -1,3 +1,7 @@
 # scratch / 暫存
 *.tmp
 .DS_Store
+
+# 自動產物（由 build.py 從 README.md 產生，不進 git）
+/_site/
+/index.html
