@@ -3,6 +3,12 @@
 > 交班單。此 repo 為 **source of truth（GitHub 最新版）**，任何機器接手先 `git pull`。
 > 完整規劃見 `README.md`；機票原始數據在 `data/`。
 
+## 對外網頁（給家人看）
+- 公開網址：**https://mansonliu.github.io/osaka-usj-2026-09/**（GitHub Pages，main 分支根目錄 `/index.html`）。
+- `index.html` = README 內容做成的響應式單頁（手機/平板/桌機自適應、暗色相容），含 `<meta name="robots" content="noindex">`→不被搜尋引擎收錄，等於「拿到網址才看得到」。
+- ⚠ **repo 必須維持公開**：免費帳號私人 repo 不能跑 Pages，一改私人網站立刻掛。
+- 維護：改 `index.html`（內容若大改記得同步 `README.md`，目前兩份各自獨立）→ `git push`，約 1 分鐘後線上自動更新。
+
 ## 任務一句話
 2026/9 帶家人（2 大人 + 13 歲女 + 11 歲男）去大阪環球影城（USJ），影城為主、住影城官方飯店、舒適不趕、含快速通關。比機票/飯店/門票價格後給最佳方案。
 
