@@ -214,6 +214,86 @@
 
 ---
 
+## 七、其他台灣旅人的經驗整理（近 16 個月部落格／攻略）
+
+> 整理 2025/02–2026/06 台灣中文部落客與旅遊站的實際心得，聚焦套票、飯店、航班、交通與注意事項。每點附出處連結（文末來源清單）。價格皆浮動，以購買當日官網為準。
+
+### 1. 套票與快速通關（最多人踩雷的地方）
+
+- **入園券（Studio Pass）有三種**：1 日／**1.5 日**（第一天 15:00 後入場＋隔天整天）／2 日。短行程＋想避開排隊，多數攻略建議 **2 日券**玩得從容。⚠ **2025/5/6 起 USJ 取消現場售票，一律要線上先買**。〔[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)〕
+- **快速通關（Express Pass）2026 改版成 4／5／7／8 四種**，數字＝可快速通關的設施數量。實際細分十幾個版本，依季節（萬聖節/平日）搭配的設施不同。🔴 **所有 Express 版本都「不含入園門票」，要和門票分開買、一起帶。**〔[波比看世界](https://bobbytravel.tw/usj/)、[Let's go Kyoto](https://letsgokyoto.com/universal-studio-japan-express-pass-guide/)〕
+- **首遊最推「Express 4（含咚奇剛礦車＋瑪利歐賽車＋哈利波特禁忌之旅）」**——理由是「幾乎把最容易排爆的三大區域設施打包」。想全包熱門設施才上 Express 7／8。〔[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)〕
+- **開賣與搶票**：快通多在使用日「**整整 2 個月前**」開賣，連假/旺日常 1–2 個月前就售罄；買不到只能換購其他含相同設施的組合、或改入園日。〔[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)、[Let's go Kyoto](https://letsgokyoto.com/universal-studio-japan-express-pass-guide/)〕
+- **超級任天堂世界／咚奇剛是整區人流管制**，四種進法：①買含任天堂的快通（保證一次入場）②買單獨的「保證入場券」③用 USJ App 抽**免費整理券**④純碰運氣（晚上人少時）。⚠ **保證入場券只保證進「園區」，園區內每項設施沒買快通仍要排隊。**〔[Klook](https://www.klook.com/zh-TW/blog/usj-super-nintendo-world/)、[波比看世界](https://bobbytravel.tw/usj/)〕
+- **整理券發很快**：旺日開園後 1–2 小時抽光；買含任天堂的快通就不用再抢整理券。實戰可「快通保證入場＋同時 App 抽整理券」爭取第二次進去看夜景。〔[波比看世界](https://bobbytravel.tw/usj/)、[Klook](https://www.klook.com/zh-TW/blog/usj-super-nintendo-world/)〕
+- **Power-Up Band 能力提升手環約 ¥4,900**（部分文章寫 ¥3,800，版本/浮動，以官網為準）。瑪利歐粉、想玩園區互動小遊戲＝強烈建議買；只玩設施拍照可省，把錢放快通或美食。〔[遊迪士尼](https://www.yourdisney.com.tw/universalstudiosjapan/super-nintendo-world-store-power-up-band-guide/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕
+- **購票管道**：Klook／KKday＝中文台幣結帳、可取消、不易買錯，是台灣人主流；官網 usjticketing 票種最齊但**海外信用卡常付款失敗**。💡 **Klook 預約快通可「指定想要的場次」是別家沒有的**，搶任天堂保證時段很有用。〔[波比看世界](https://bobbytravel.tw/usj/)、[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)〕
+
+### 2. 飯店差異與訂房（含一個常見誤解的查證）
+
+- **官方/園區飯店約 8 間，最大差別是「到大門距離」「有無大浴場溫泉」「主題房」**：
+  - 地點至上 → **The Park Front（正對大門 1 分）**。
+  - 想泡湯看夜景 → **Singulari（頂樓免費 Skyspa 大浴場、CP 高）**或 **京阪 Tower（31F 付費高空溫泉）**。
+  - 親子主題房 → **港灣 Port（小小兵）**、**近鐵（芝麻街）**、**Port Vita（多主題＋親子備品）**。
+  - **Liber** 是唯一免費天然溫泉，但離大門較遠（櫻島站、步行約 10 分）。〔[來一球叭噗](https://gototravel.tw/usj-japan-hotel/)、[Mimi韓](https://mimigo.tw/usj-hotels/)、[涼子是也](https://lyes.tw/thepark-front-hotel/)〕
+- **親子佔床**：各家免費年齡不一（多為 5 歲以下免費，港灣／京阪 Tower 為 6 歲以下免費）→ **7 歲以上一律比照大人佔床**，四人就直接訂正式四人房／家庭房，別硬擠。訂前最好直接向飯店確認佔床政策。〔[阿波旅行中](https://april-travel-blog.com/日本住宿/osaka-usj-hotel/)〕
+- 🔴 **重要查證：日本 USJ 官方飯店「沒有」免費自動早入園（Early Park Admission）福利。** 很多台灣文標題寫「住這間提早入園」，細看內文其實是指「地點近、能早起去門口排隊卡位」，不是官方早入園券。要保證提早入園得**另外加購 Early Entry／VIP 方案**（與住不住官方飯店無關；美國奧蘭多才有住客早一小時福利，日本沒有）。住官方飯店的真正價值＝**離大門近、玩到閉園走路回房**。〔[阿波旅行中](https://april-travel-blog.com/日本住宿/osaka-usj-hotel/)、[goodhotelreview](https://goodhotelreview.com/飯店推薦/osaka-usj-hotels-review/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕（與本案第二節「沒有住官方飯店就自動早入園這回事」一致）
+- **住園區 vs 市區**：行程以 USJ 為主就一致推薦住園區旁（早上晚點出發、玩到閉園立刻回房）；要兼顧購物美食才住難波／心齋橋（交通樞紐，但房間普遍偏小，帶小孩務必訂家庭房／和式房）。折衷：**USJ 當天住園區一晚，其餘住市區**。梅田／難波↔USJ 約 20–40 分需轉乘。〔[Mimi韓](https://mimigo.tw/usj-hotels/)〕
+
+### 3. 航班差異
+
+- **降落機場**：台灣飛大阪幾乎都到**關西 KIX**；伊丹 ITM 是純國內線、無國際航班，玩大阪＋USJ 用 KIX 即可。〔[Maruko](https://marukojp.com/osaka-kansai-airport-difference)〕
+- **全服務 vs 廉航（帶小孩取捨）**：華航／長榮**班次密集（每天 3–5 班）**，可早去晚回、適合家庭長輩；星宇 2026 上 A350-1000 硬體最新。廉航中**樂桃最便宜但停 KIX 第二航廈**（T2↔T1 要搭約 10 分免費接駁，多留時間），且**樂桃行李最嚴、加購也只能一件且不能與同行人共用額度**；**虎航行李可多人合併計算**對家庭友善。〔[Maruko 機票攻略](https://marukojp.com/article/osaka-flight)、[芒果這一家](https://mangofamily56.com/peach/)〕
+- **深夜抵達**：電車停駛時**利木津巴士 24 小時營運**直達梅田／難波是唯一救星，或前一晚住 KIX 內飯店。本案選的是全服務航空＋下午班，不受此限，但可當備援知識。〔[Maruko](https://marukojp.com/article/osaka-flight)〕
+- **票價抓法（參考）**：傳統航空來回含稅 $12,500 以下算神價、合理區間約 9,000–15,000；但本案卡中秋連假旺季，價格本就偏高（見第一節實查）。〔[Maruko](https://marukojp.com/article/osaka-flight)〕
+
+### 4. KIX → USJ 交通
+
+| 方式 | 時間 | 票價 | 備註 |
+|---|---|---|---|
+| JR 關空快速 → 西九条轉 JR 夢咲線 | ~72 分 | ¥1,210 | CP 高、最常見走法 |
+| 南海電鐵空港急行 | ~72 分 | ¥1,160 | 最便宜 |
+| 利木津巴士（直達 USJ） | ~63 分 | ¥1,800（兒童 ¥900） | 免轉車、免預約、深夜可用 |
+
+> 不論哪條，最後都要搭 **JR 夢咲線（櫻島線）到「環球城站（ユニバーサルシティ駅）」**；西九条轉車「就在旁邊月台、5 分鐘到」。💡 **若只在大阪市區往返 USJ，不必特地買 JR Pass，刷 ICOCA／Suica 最方便。**〔[來一球叭噗 交通](https://gototravel.tw/osaka-go-to-usj-transport/)、[Elsa](https://elsa819.com/osaka-usj/)〕
+
+### 5. 整體注意事項
+
+- **App 先在台灣下載**（中文、免註冊）：看即時等候時間、地圖、表演時刻，並**抽超級任天堂世界整理券**（憑門票每人一張，可掃同行 QR 一次領）。〔[小環妞](https://wkitty.tw/blog/post/usj)、[來一球叭噗 App](https://gototravel.tw/usj-app/)〕
+- **身高限制**（帶 11 歲兒子要注意）：耀西的冒險 92cm、小小兵 102cm、瑪利歐賽車 107cm、**哈利波特禁忌之旅 122cm**、好萊塢美夢／飛天翼龍 132cm；122cm 以下設施須大人陪同。〔[Elsa](https://elsa819.com/osaka-usj/)〕
+- **人潮**：週二～週四最少、假日最多；可用「人潮預測網站」查當天預估。本案兩天落在週五～週日（方案 A 含一天非週末，較佳）。〔[來一球叭噗 人潮](https://gototravel.tw/usj-japan-crowd-forecast/)〕
+- **9 月下旬天氣**：秋季氣候舒服，但初秋白天仍可能偏熱，備防曬（帽子、防 UV 外套、小風扇、傘）。
+- **置物櫃**：園外櫃 S ¥400／M ¥600／L ¥1,000／XL ¥1,500；車站投幣櫃過夜算隔日加錢。行李可從新大阪站行李櫃檯（07:00–23:00）付費宅配到飯店。〔[Elsa](https://elsa819.com/osaka-usj/)、[NAVITIME](https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/)〕
+- **入園時間**：USJ 很愛提早開園（常 07:15–07:45 就開），住園區旁一發現提早就衝。〔[波比看世界](https://bobbytravel.tw/usj/)〕
+
+### 台灣部落格／攻略來源清單（2025/02–2026/06）
+
+| 主題 | 標題／站名 | 年月 | 連結 |
+|---|---|---|---|
+| 門票/快通 | 大阪環球影城門票購買攻略｜來一球叭噗 | 2026-05 | https://gototravel.tw/how-to-buy-usj-ticket/ |
+| 門票/快通/實戰 | 2026 大阪環球影城攻略｜波比看世界 | 2026-06 | https://bobbytravel.tw/usj/ |
+| 快通 4/5/7/8 | 環球影城快速通關攻略｜Let's go Kyoto | 2026-01 | https://letsgokyoto.com/universal-studio-japan-express-pass-guide/ |
+| 任天堂入場 | 超級任天堂世界入場方式｜Klook 部落格 | 2025–2026 | https://www.klook.com/zh-TW/blog/usj-super-nintendo-world/ |
+| Power-Up Band | 任天堂世界紀念品＋手環攻略｜遊迪士尼 | 2026 | https://www.yourdisney.com.tw/universalstudiosjapan/super-nintendo-world-store-power-up-band-guide/ |
+| 門票/早入園 | 2026 環球影城門票快通比較｜福寶媽衝日本 | 2026-04 | https://gogojp.tw/universal-studios-japan/ |
+| 飯店 | USJ 官方合作飯店比較＋入住心得｜來一球叭噗 | 2025-10 | https://gototravel.tw/usj-japan-hotel/ |
+| 飯店（園區/市區） | 2026 USJ 飯店推薦懶人包｜Mimi韓 | 2026-05 | https://mimigo.tw/usj-hotels/ |
+| 飯店（實住） | The Park Front Hotel 實住｜涼子是也 | 2025-11 | https://lyes.tw/thepark-front-hotel/ |
+| 飯店（早入園查證） | USJ 住宿推薦／提早入園｜阿波旅行中 | 2025-02 | https://april-travel-blog.com/日本住宿/osaka-usj-hotel/ |
+| 飯店（好處） | 離 USJ 最近的官方飯店比較｜goodhotelreview | 日期不明 | https://goodhotelreview.com/飯店推薦/osaka-usj-hotels-review/ |
+| 機票/航空比較 | 大阪機票攻略：航空比較、訂票技巧｜Maruko | 2026-05 | https://marukojp.com/article/osaka-flight |
+| 機場差異 | 關西機場 KIX vs 伊丹 ITM｜Maruko | 日期不明 | https://marukojp.com/osaka-kansai-airport-difference |
+| 廉航體驗 | 樂桃航空桃園飛關西搭機體驗｜芒果這一家 | 2026-04 | https://mangofamily56.com/peach/ |
+| KIX→USJ 交通 | 大阪環球影城交通攻略｜來一球叭噗 | 2025-11 | https://gototravel.tw/osaka-go-to-usj-transport/ |
+| App/整理券 | USJ 園區整體攻略（App/整理券/快通）｜小環妞 | 2026-05 | https://wkitty.tw/blog/post/usj |
+| 交通/身高/置物櫃 | 環球影城交通門票設施身高限制｜Elsa | 2024-12 更新 | https://elsa819.com/osaka-usj/ |
+| 人潮預測 | USJ 人潮預測＋減少排隊方式｜來一球叭噗 | 日期不明 | https://gototravel.tw/usj-japan-crowd-forecast/ |
+| 置物櫃/宅配 | 新大阪車站置物櫃與行李寄存｜NAVITIME | 日期不明 | https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/ |
+
+> 整理範圍與限制：以上為台灣中文來源（已排除中國／香港繁中站）；部分文章未標明確發文日，已標「日期不明」。快通版本與票價為 2026 上半年資訊，9 月下旬確切日價仍以 7 月底票價上架後官網為準。
+
+---
+
 ### 資料來源（查核日 2026-06-23，價格浮動）
 - 機票：華航/長榮/星宇官網台北→大阪、Trip.com 班表、關西機場時刻表、2026 燃油附加費調漲
 - 飯店：USJ 官方夥伴飯店清單、各飯店官網、Booking/Agoda/Trip.com
