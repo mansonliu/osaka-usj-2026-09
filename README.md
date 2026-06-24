@@ -266,6 +266,17 @@
 - **置物櫃**：園外櫃 S ¥400／M ¥600／L ¥1,000／XL ¥1,500；車站投幣櫃過夜算隔日加錢。行李可從新大阪站行李櫃檯（07:00–23:00）付費宅配到飯店。〔[Elsa](https://elsa819.com/osaka-usj/)、[NAVITIME](https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/)〕
 - **入園時間**：USJ 很愛提早開園（常 07:15–07:45 就開），住園區旁一發現提早就衝。〔[波比看世界](https://bobbytravel.tw/usj/)〕
 
+### 6. 機加酒（套裝）vs 自由行 DIY——訂法比較
+
+> 結論先講：以本案「**住官方飯店＋卡中秋固定日期＋想要快通／2 日券**」的條件，**自由行 DIY 比固定機加酒套裝更划算也更靈活**，與本規劃的分開比價方向一致。
+
+- **台灣哪些通路有 USJ 機加酒**：東南、雄獅、可樂、各航空假期（長榮／星宇假期）都有「機＋酒＋USJ 1 日門票」的自由行套裝；易遊網、燦星另有含環球 1 日的**跟團** 5 天行程。〔[東南](https://www.settour.com.tw/act/gfg/japan/usj/gfp.html)、[雄獅 161130011](https://vacation.liontravel.com/detail/161130011)、[可樂](https://www.colatour.com.tw/webDM/trip/japan/fit.html)〕
+- ⚠ **套裝多半「不含」快速通關、不含提早入園、只給 1 日票**（2 日券、快通要另外加購）。雄獅產品頁白紙黑字寫 USJ 一日票「不含快速通關／提早入園門票／超級任天堂世界區域入場保證券」。〔[雄獅](https://vacation.liontravel.com/detail/161130011)〕
+- **價位（淡季起價、單人、含 1 晚＋1 日票）**：東南約 NT$13,932–16,956 起（依官方飯店）、可樂「瘋玩日本環球影城」每人 $13,999 起未稅。⚠ 這些是起價，**9 月下旬卡中秋會明顯更高**。〔[東南](https://www.settour.com.tw/act/gfg/japan/usj/gfp.html)、[可樂](https://www.colatour.com.tw/webDM/trip/japan/fit.html)〕
+- **划算度**：搭廉航＋住市區一般飯店＋不要快通 → 套裝含行李，比分開買省約 NT$1,500–2,000；但**要指定官方飯店、卡中秋固定班次、要快通／2 日券時，套裝航班日期綁死、可選班次少、官方飯店清單有限且旺季先售罄、改退費另收手續費 → DIY 更可控**。〔[KKday 機加酒比較](https://www.kkday.com/zh-tw/blog/163204/asia-japan-self-guided-tour)〕
+- ⚠ **早入園迷思（再次查證）**：**查無任何台灣機加酒套裝含「保證早入園」**；且 USJ 官方「提早入園」套票**已於 2024/10 停售**。海外旅客現唯一「提早約 15 分鐘入園」管道＝**KKday／Klook 綁售的「Early Entry 通行證」**（約 +600 台幣/人、與門票綁套票、數量少易售罄），是票券平台自家綁售，不是旅行社套裝、也不是住官方飯店送的。〔[Let's go Kyoto（2024/10 停售）](https://letsgokyoto.com/usj-ticket-and-special-entry/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕
+- 💡 **本案建議做法**：機票自己訂（鎖 9/24 或 9/25 特定班次選擇多）＋官方飯店訂「可免費取消」房（現在就先卡、旺季 3–4 個月前是底線）＋ KKday/Klook 買 **2 日票**＋旺季幾乎必買的快通；要早入園再加購 Early Entry 通行證。**機加酒只有在「不挑官方飯店＋搭廉航＋不要快通」時才省。**
+
 ### 台灣部落格／攻略來源清單（2025/02–2026/06）
 
 | 主題 | 標題／站名 | 年月 | 連結 |
@@ -289,6 +300,11 @@
 | 交通/身高/置物櫃 | 環球影城交通門票設施身高限制｜Elsa | 2024-12 更新 | https://elsa819.com/osaka-usj/ |
 | 人潮預測 | USJ 人潮預測＋減少排隊方式｜來一球叭噗 | 日期不明 | https://gototravel.tw/usj-japan-crowd-forecast/ |
 | 置物櫃/宅配 | 新大阪車站置物櫃與行李寄存｜NAVITIME | 日期不明 | https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/ |
+| 機加酒 | USJ 機加酒自由行（含1日票）｜東南旅遊 | 現行 2026 | https://www.settour.com.tw/act/gfg/japan/usj/gfp.html |
+| 機加酒 | 大阪自由行＋USJ門票 161130011｜雄獅旅遊 | 現行 2026 | https://vacation.liontravel.com/detail/161130011 |
+| 機加酒 | 日本自由行／瘋玩環球影城｜可樂旅遊 | 現行 2026 | https://www.colatour.com.tw/webDM/trip/japan/fit.html |
+| 機加酒 vs DIY | 日本機加酒推薦／DIY 比較｜KKday | 2025–2026 | https://www.kkday.com/zh-tw/blog/163204/asia-japan-self-guided-tour |
+| 早入園停售 | 環球影城門票＋提早入園停售｜Let's go Kyoto | 2025-03 | https://letsgokyoto.com/usj-ticket-and-special-entry/ |
 
 > 整理範圍與限制：以上為台灣中文來源（已排除中國／香港繁中站）；部分文章未標明確發文日，已標「日期不明」。快通版本與票價為 2026 上半年資訊，9 月下旬確切日價仍以 7 月底票價上架後官網為準。
 
