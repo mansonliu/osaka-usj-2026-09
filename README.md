@@ -294,6 +294,77 @@
 
 ---
 
+## 八、行前準備與容易忽略的眉角（台灣旅人常分享、原規劃未涵蓋）
+
+> 補充第七節之外、第一次帶小孩去 USJ／大阪才會踩到的事。針對「2 大人＋13 歲女＋11 歲男、2026/9 下旬」這組條件特別篩過。每點附出處（文末來源清單）。
+
+### 1. 🔴 9 月下旬正好撞 USJ 萬聖節——必看
+
+> 🔴 **2025 萬聖節期間為 9/4～11/3，2026 大概率同期 → 本行程鐵定遇到。** 不先規劃，當天會手忙腳亂。
+
+- **白天 vs 晚上完全兩種樂園**：開園～17:00 是闔家歡的 Trick-or-Treat（任天堂、哈利波特區不參與）；**18:00 起換檔成「萬聖驚魂夜（Horror Nights）」**——大批逼真喪屍上街、尖叫＋電鋸聲，走紫色路線會突然嚇人（但不碰你），園內有**藍色安全區**可躲。
+- ⚠ **恐怖鬼屋（如 Stage 22）14 歲以下禁入** → **13 歲女、11 歲男兩個都進不去**，別排。
+- **帶小孩的動線建議**：白天玩設施＋抽整理券、黃昏看完想看的秀，**天黑（18:00）後若孩子怕喪屍就提早離園或躲藍色安全區**。怕的話把想玩的在天黑前玩完。〔[小布少爺](https://boo2k.com/usj-halloween/)、[Klook 萬聖節](https://www.klook.com/zh-TW/blog/tips-usj-halloween-japan/)、[letsgojp](https://osaka.letsgojp.com/archives/580767/)〕
+- **變裝規定**（萬聖節期間會用到）：可變裝但**禁止遮臉**（覆蓋半臉以上的面具/頭盔通常不能上設施）、禁過度裸露、禁仿真武器（道具刀劍也不行）、禁會讓他人恐懼的恐怖妝。〔[castel.jp 規則](https://castel.jp/p/8505)〕
+
+### 2. 園內玩法（第七節未涵蓋）
+
+- **Single Rider 單人通道**：哈利波特禁忌之旅、大白鯊、飛天翼龍走單人通道**超快**；⚠ 咚奇剛、瑪利歐賽車的單人通道**沒用**（跟一般隊一樣久）。💡 你們 4 人偶數，可「2＋2」拆組、或讓兩個大孩子自己走單人通道衝同一台，省大量排隊——代價是**不保證同車**，先講好集合點。〔[Jenny 實測](https://vocus.cc/article/6889e206fd89780001cfece2)、[USJ 官網](https://www.usj.co.jp/web/zh/tw/attractions/how-to-fun/single-rider)〕
+- **奇諾比奧咖啡店（Kinopio's Cafe，任天堂最熱門餐廳）2025 改線上預約**：⚠ **必須人已在超級任天堂世界園區內**（80 公尺定位偵測）才掃得到門口 QR 用 LINE 預約，沒進園區掃不了。撇步：一進園區「一開門先去吃」或晚上去（常不用抽券）。〔[來一球叭噗](https://gototravel.tw/usj-kinopios-cafe/)〕
+- **水世界（Water World）一天只 2 場**，不需抽選但要**提早 30–40 分卡位**；前排會被狂噴濕（怕濕坐後排）。各秀時刻入園後先看 USJ App 再排動線。〔[來一球叭噗 表演](https://gototravel.tw/usj-japan-show/)〕
+- **哈利波特互動魔杖才能施咒**（前端有黑色感應器），比一般魔杖只貴約 ¥400；園區 8 處施法點地上有青銅盾牌標示，成功率偏低、旁邊工作人員會教。〔[來一球叭噗 魔杖](https://gototravel.tw/usj-harry-porter-magic-wand/)、[BringYou](https://www.bring-you.info/zh-tw/universal-studios-harry-potter-wand)〕
+- **食物雷點**：人氣**爆米花桶約 ¥5,500、常售罄、限購 1 個**（早點買，跟櫃檯說 "separate" 分開裝）；奶油啤酒（無酒精）基本款約 ¥800；侏儸紀／水世界**自備輕便雨衣**比現場買划算。〔[來一球叭噗 爆米花桶](https://gototravel.tw/usj-popcorn-bucket-mario/)、[波比看世界](https://bobbytravel.tw/usj/)〕
+- **設施寄物**：哈利波特禁忌之旅排隊時隨身行李須寄放、無法拍照；好萊塢美夢、大白鯊等也要先鎖置物櫃。〔[波比看世界](https://bobbytravel.tw/usj/)〕
+
+### 3. 退稅、付款、上網
+
+- **退稅**：⚠ 已查證——日本退稅**新制 2026/11/1 才上路**，你 **9 月去仍是舊制「店內即買即退」**，不必先付稅再到機場退。同店未稅滿 ¥5,000 即退、需出示**護照**、購買日起 90 天內出境。退稅櫃台閉園即停收，要退早點去。〔[Funliday 退稅新制](https://www.funliday.com/posts/japan-taxfree-2026/)、[JL Talks](https://blog.jesselin.com/archives/154534/japan-duty-free-changes-2026/)〕
+- **付款**：市區「能刷卡／PayPay 就刷」比預先大額換匯划算；ICOCA 也能在便利商店／部分餐廳當錢用（⚠ 但**儲值只收現金**）；信用卡海外消費約 1.5% 手續費，台灣行動支付可免。現金備小額應急即可。〔[vocus 刷卡攻略](https://vocus.cc/article/69aa5a1bfd897800016ec9a0)、[WAmazing](https://tw.wamazing.com/media/article/a-3639/)〕
+- **上網**：eSIM 為台灣人主流（免換卡、走散各自有網）；💡 **兩支大人手機各裝吃到飽、開熱點分給兩個小孩的裝置**最省，或一台 WiFi 機＋一張備援 eSIM。〔[KKday 日本網卡](https://www.kkday.com/zh-tw/blog/21014/asia-japan-wifisimcard)〕
+
+### 4. 入境證件、保險、颱風
+
+- **Visit Japan Web（2026 版）**：入境審查＋海關申報**合併成一個 QR**；⚠ 同行家人最多 10 名、**每人都要各填一次**、且**必須與填寫人同進同出**（否則該名小孩要另開一份）；建議每人 QR 各自截圖。最晚入境前 6 小時填完。〔[Funliday VJW](https://www.funliday.com/posts/2026-japan-entry/)〕
+- **護照效期**：赴日建議**剩餘 6 個月以上**；⚠ **小孩護照效期短易過期，四本都要逐一確認**。
+- **颱風＋保險**：9 月是關西颱風高峰，建議保**旅遊不便險**＋**海外醫療險**（信用卡附贈多半只有不便險、醫療要自己加保）；⚠ 不便險**務必在海上颱風警報發布前投保**，警報後才保不賠。颱風天室內備案：梅田地下街、海遊館、黑門市場、USJ 室內設施。〔[Klook 不便險](https://www.klook.com/zh-TW/blog/travel-insurance/)〕
+- **大型活動**：⚠ 已查證——**大阪萬博已 2025/10/13 閉幕**，2026/9 無萬博人潮。但**仍要避日本 9 月下旬連假（敬老／白銀週，與中秋同期）的訂房高峰**，並查當週有無京瓷巨蛋／大阪城 Hall 大型演唱會（會推高該區房價）。〔[萬博閉幕報導](https://tw.news.yahoo.com/大阪萬博會圓滿閉幕-入場人次突破2500萬-盈餘估280億日圓-004426894.html)〕
+
+### 5. 親子備品（最常被忘）
+
+- **兒童常備藥**：出發前先到小兒科拿退燒、止瀉吐、抗生素藥膏、蚊蟲、益生菌——「最常忘記帶的就是兒童常備藥」。日本藥妝可補但要看成分確認適用小孩。〔[發現心樂園](https://finduheart.com/babytrip)、[polida 成藥清單](https://polida.com.tw/post/japan-medicine-guide)〕
+- **電器免變壓器**：日本插座與台灣同（雙扁孔），手機／相機／筆電充電器支援 100–240V 者直接用；備一個「三轉二」轉接頭給三孔筆電充電器即可。飯店多有吹風機可不帶。〔[tripool 插頭電壓](https://www.tripool.app/articles/japan-plug-and-socket)〕
+
+### 第八節來源清單（2025/02–2026/06）
+
+| 主題 | 標題／站名 | 年月 | 連結 |
+|---|---|---|---|
+| 萬聖節 | 2025 USJ 萬聖節攻略｜小布少爺 | 2025-09 | https://boo2k.com/usj-halloween/ |
+| 萬聖節限定 | 2025 萬聖節限定設施／14 歲限制｜Klook | 2025 | https://www.klook.com/zh-TW/blog/tips-usj-halloween-japan/ |
+| 萬聖節喪屍 | 萬聖驚魂夜喪屍｜letsgojp | 2025 | https://osaka.letsgojp.com/archives/580767/ |
+| 變裝規則 | USJ 變裝規則 2025｜castel.jp | 2025 | https://castel.jp/p/8505 |
+| 單人通道 | 單人優先乘車實測｜Jenny's murmur | 2025-07 | https://vocus.cc/article/6889e206fd89780001cfece2 |
+| 單人通道 | 單人優先乘坐｜USJ 官網 | 日期不明 | https://www.usj.co.jp/web/zh/tw/attractions/how-to-fun/single-rider |
+| 餐廳預約 | 奇諾比奧咖啡店預約｜來一球叭噗 | 2025-08 | https://gototravel.tw/usj-kinopios-cafe/ |
+| 表演卡位 | 表演秀時間整理｜來一球叭噗 | 2026 | https://gototravel.tw/usj-japan-show/ |
+| 互動魔杖 | 哈利波特魔杖施法｜來一球叭噗 | 日期不明 | https://gototravel.tw/usj-harry-porter-magic-wand/ |
+| 互動魔杖 | 哈利波特魔杖攻略｜BringYou | 日期不明 | https://www.bring-you.info/zh-tw/universal-studios-harry-potter-wand |
+| 爆米花桶 | 瑪利歐爆米花桶｜來一球叭噗 | 日期不明 | https://gototravel.tw/usj-popcorn-bucket-mario/ |
+| 退稅新制 | 2026 日本退稅新制｜Funliday | 2026-06 | https://www.funliday.com/posts/japan-taxfree-2026/ |
+| 退稅新制 | 2026/11 免稅制度變化｜JL Talks | 2026 | https://blog.jesselin.com/archives/154534/japan-duty-free-changes-2026/ |
+| 付款/IC | 2026 日本刷卡攻略｜vocus | 2026 | https://vocus.cc/article/69aa5a1bfd897800016ec9a0 |
+| 行動支付 | 2025 日本行動支付｜WAmazing | 2025 | https://tw.wamazing.com/media/article/a-3639/ |
+| 上網 eSIM | 日本網卡推薦 2026｜KKday | 2026 | https://www.kkday.com/zh-tw/blog/21014/asia-japan-wifisimcard |
+| 入境 VJW | 2026 Visit Japan Web 教學｜Funliday | 2026-06 | https://www.funliday.com/posts/2026-japan-entry/ |
+| 不便險/颱風 | 2026 旅遊不便險｜Klook | 2026 | https://www.klook.com/zh-TW/blog/travel-insurance/ |
+| 萬博閉幕 | 大阪萬博圓滿閉幕｜Yahoo 新聞 | 2025-10 | https://tw.news.yahoo.com/大阪萬博會圓滿閉幕-入場人次突破2500萬-盈餘估280億日圓-004426894.html |
+| 親子備品 | 2026 帶小孩去日本注意事項｜發現心樂園 | 2026 | https://finduheart.com/babytrip |
+| 兒童成藥 | 日本藥局成藥清單｜polida | 日期不明 | https://polida.com.tw/post/japan-medicine-guide |
+| 插頭電壓 | 日本插頭/電壓 2026｜tripool 旅步 | 2026 | https://www.tripool.app/articles/japan-plug-and-socket |
+
+> 兩大查證結論：① **退稅新制 2026/11/1 才上路**，9 月去仍是店內即買即退（舊制）；② **大阪萬博已 2025/10/13 閉幕**，2026/9 無萬博人潮，但仍要避日本 9 月下旬連假與當週巨蛋演唱會的訂房高峰。萬聖節期間（含 14 歲鬼屋限制、喪屍夜）已 WebFetch 原文確認；部分商品價格為單一來源、隨檔期浮動，現場再確認。
+
+---
+
 ### 資料來源（查核日 2026-06-23，價格浮動）
 - 機票：華航/長榮/星宇官網台北→大阪、Trip.com 班表、關西機場時刻表、2026 燃油附加費調漲
 - 飯店：USJ 官方夥伴飯店清單、各飯店官網、Booking/Agoda/Trip.com
