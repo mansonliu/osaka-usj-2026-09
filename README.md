@@ -81,6 +81,7 @@
 - USJ 採每日浮動票價，9 月下旬的票約 **7 月底～8 月初**上架。
 - **含任天堂保證入場的 Express 很搶手、會賣完** → 票價一上架就先搶 Express，門票可稍後補。
 - 管道：USJ 官方票務站 usjticketing.com（最準、庫存最齊）為主；Klook / KKday 中文方便、可比價。
+- ⚠ **早入園不是住官方飯店送的**：官方「提早入園」套票 2024/10 已停售，海外旅客唯一管道＝**KKday／Klook 綁售的「Early Entry 通行證」**（約 +600 台幣/人、提早約 15 分、數量少易售罄）。想早入園就在買票時一起加購。
 
 ---
 
@@ -186,7 +187,8 @@
 
 ## 四、其他台灣旅人的經驗整理（近 16 個月部落格／攻略）
 
-> 整理 2025/02–2026/06 台灣中文部落客與旅遊站的實際心得，聚焦套票、飯店、航班、交通與注意事項。每點附出處連結（文末來源清單）。價格皆浮動，以購買當日官網為準。
+> 整理 2025/02–2026/06 台灣中文部落客與旅遊站的實際心得，聚焦**還用得到**的部分：門票快通、KIX→USJ 交通、園區現場注意事項。每點附出處連結（文末來源清單）。價格皆浮動，以購買當日官網為準。
+> 📦 飯店怎麼選、航空全服務 vs 廉航、機加酒 vs 自由行這些「訂之前」的比較已隨機票/飯店定案移除（要回顧見附錄）。
 
 ### 1. 套票與快速通關（最多人踩雷的地方）
 
@@ -199,25 +201,7 @@
 - **Power-Up Band 能力提升手環約 ¥4,900**（部分文章寫 ¥3,800，版本/浮動，以官網為準）。瑪利歐粉、想玩園區互動小遊戲＝強烈建議買；只玩設施拍照可省，把錢放快通或美食。〔[遊迪士尼](https://www.yourdisney.com.tw/universalstudiosjapan/super-nintendo-world-store-power-up-band-guide/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕
 - **購票管道**：Klook／KKday＝中文台幣結帳、可取消、不易買錯，是台灣人主流；官網 usjticketing 票種最齊但**海外信用卡常付款失敗**。💡 **Klook 預約快通可「指定想要的場次」是別家沒有的**，搶任天堂保證時段很有用。〔[波比看世界](https://bobbytravel.tw/usj/)、[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)〕
 
-### 2. 飯店差異與訂房（含一個常見誤解的查證）
-
-- **官方/園區飯店約 8 間，最大差別是「到大門距離」「有無大浴場溫泉」「主題房」**：
-  - 地點至上 → **The Park Front（正對大門 1 分）**。
-  - 想泡湯看夜景 → **Singulari（頂樓免費 Skyspa 大浴場、CP 高）**或 **京阪 Tower（31F 付費高空溫泉）**。
-  - 親子主題房 → **港灣 Port（小小兵）**、**近鐵（芝麻街）**、**Port Vita（多主題＋親子備品）**。
-  - **Liber** 是唯一免費天然溫泉，但離大門較遠（櫻島站、步行約 10 分）。〔[來一球叭噗](https://gototravel.tw/usj-japan-hotel/)、[Mimi韓](https://mimigo.tw/usj-hotels/)、[涼子是也](https://lyes.tw/thepark-front-hotel/)〕
-- **親子佔床**：各家免費年齡不一（多為 5 歲以下免費，港灣／京阪 Tower 為 6 歲以下免費）→ **7 歲以上一律比照大人佔床**，四人就直接訂正式四人房／家庭房，別硬擠。訂前最好直接向飯店確認佔床政策。〔[阿波旅行中](https://april-travel-blog.com/日本住宿/osaka-usj-hotel/)〕
-- 🔴 **重要查證：日本 USJ 官方飯店「沒有」免費自動早入園（Early Park Admission）福利。** 很多台灣文標題寫「住這間提早入園」，細看內文其實是指「地點近、能早起去門口排隊卡位」，不是官方早入園券。要保證提早入園得**另外加購 Early Entry／VIP 方案**（與住不住官方飯店無關；美國奧蘭多才有住客早一小時福利，日本沒有）。住官方飯店的真正價值＝**離大門近、玩到閉園走路回房**。〔[阿波旅行中](https://april-travel-blog.com/日本住宿/osaka-usj-hotel/)、[goodhotelreview](https://goodhotelreview.com/飯店推薦/osaka-usj-hotels-review/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕（與本案附錄 B 飯店段判斷一致）
-- **住園區 vs 市區**：行程以 USJ 為主就一致推薦住園區旁（早上晚點出發、玩到閉園立刻回房）；要兼顧購物美食才住難波／心齋橋（交通樞紐，但房間普遍偏小，帶小孩務必訂家庭房／和式房）。折衷：**USJ 當天住園區一晚，其餘住市區**。梅田／難波↔USJ 約 20–40 分需轉乘。〔[Mimi韓](https://mimigo.tw/usj-hotels/)〕
-
-### 3. 航班差異
-
-- **降落機場**：台灣飛大阪幾乎都到**關西 KIX**；伊丹 ITM 是純國內線、無國際航班，玩大阪＋USJ 用 KIX 即可。〔[Maruko](https://marukojp.com/osaka-kansai-airport-difference)〕
-- **全服務 vs 廉航（帶小孩取捨）**：華航／長榮**班次密集（每天 3–5 班）**，可早去晚回、適合家庭長輩；星宇 2026 上 A350-1000 硬體最新。廉航中**樂桃最便宜但停 KIX 第二航廈**（T2↔T1 要搭約 10 分免費接駁，多留時間），且**樂桃行李最嚴、加購也只能一件且不能與同行人共用額度**；**虎航行李可多人合併計算**對家庭友善。〔[Maruko 機票攻略](https://marukojp.com/article/osaka-flight)、[芒果這一家](https://mangofamily56.com/peach/)〕
-- **深夜抵達**：電車停駛時**利木津巴士 24 小時營運**直達梅田／難波是唯一救星，或前一晚住 KIX 內飯店。本案選的是全服務航空＋下午班，不受此限，但可當備援知識。〔[Maruko](https://marukojp.com/article/osaka-flight)〕
-- **票價抓法（參考）**：傳統航空來回含稅 $12,500 以下算神價、合理區間約 9,000–15,000；但本案卡中秋連假旺季，價格本就偏高（見附錄 A 機票比價）。〔[Maruko](https://marukojp.com/article/osaka-flight)〕
-
-### 4. KIX → USJ 交通
+### 2. KIX → USJ 交通
 
 | 方式 | 時間 | 票價 | 備註 |
 |---|---|---|---|
@@ -227,7 +211,7 @@
 
 > 不論哪條，最後都要搭 **JR 夢咲線（櫻島線）到「環球城站（ユニバーサルシティ駅）」**；西九条轉車「就在旁邊月台、5 分鐘到」。💡 **若只在大阪市區往返 USJ，不必特地買 JR Pass，刷 ICOCA／Suica 最方便。**〔[來一球叭噗 交通](https://gototravel.tw/osaka-go-to-usj-transport/)、[Elsa](https://elsa819.com/osaka-usj/)〕
 
-### 5. 整體注意事項
+### 3. 整體注意事項
 
 - **App 先在台灣下載**（中文、免註冊）：看即時等候時間、地圖、表演時刻，並**抽超級任天堂世界整理券**（憑門票每人一張，可掃同行 QR 一次領）。〔[小環妞](https://wkitty.tw/blog/post/usj)、[來一球叭噗 App](https://gototravel.tw/usj-app/)〕
 - **身高限制**（帶 11 歲兒子要注意）：耀西的冒險 92cm、小小兵 102cm、瑪利歐賽車 107cm、**哈利波特禁忌之旅 122cm**、好萊塢美夢／飛天翼龍 132cm；122cm 以下設施須大人陪同。〔[Elsa](https://elsa819.com/osaka-usj/)〕
@@ -235,17 +219,6 @@
 - **9 月下旬天氣**：秋季氣候舒服，但初秋白天仍可能偏熱，備防曬（帽子、防 UV 外套、小風扇、傘）。
 - **置物櫃**：園外櫃 S ¥400／M ¥600／L ¥1,000／XL ¥1,500；車站投幣櫃過夜算隔日加錢。行李可從新大阪站行李櫃檯（07:00–23:00）付費宅配到飯店。〔[Elsa](https://elsa819.com/osaka-usj/)、[NAVITIME](https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/)〕
 - **入園時間**：USJ 很愛提早開園（常 07:15–07:45 就開），住園區旁一發現提早就衝。〔[波比看世界](https://bobbytravel.tw/usj/)〕
-
-### 6. 機加酒（套裝）vs 自由行 DIY——訂法比較
-
-> 結論先講：以本案「**住官方飯店＋卡中秋固定日期＋想要快通／2 日券**」的條件，**自由行 DIY 比固定機加酒套裝更划算也更靈活**，與本規劃的分開比價方向一致（本案最終就是 DIY）。
-
-- **台灣哪些通路有 USJ 機加酒**：東南、雄獅、可樂、各航空假期（長榮／星宇假期）都有「機＋酒＋USJ 1 日門票」的自由行套裝；易遊網、燦星另有含環球 1 日的**跟團** 5 天行程。〔[東南](https://www.settour.com.tw/act/gfg/japan/usj/gfp.html)、[雄獅 161130011](https://vacation.liontravel.com/detail/161130011)、[可樂](https://www.colatour.com.tw/webDM/trip/japan/fit.html)〕
-- ⚠ **套裝多半「不含」快速通關、不含提早入園、只給 1 日票**（2 日券、快通要另外加購）。雄獅產品頁白紙黑字寫 USJ 一日票「不含快速通關／提早入園門票／超級任天堂世界區域入場保證券」。〔[雄獅](https://vacation.liontravel.com/detail/161130011)〕
-- **價位（淡季起價、單人、含 1 晚＋1 日票）**：東南約 NT$13,932–16,956 起（依官方飯店）、可樂「瘋玩日本環球影城」每人 $13,999 起未稅。⚠ 這些是起價，**9 月下旬卡中秋會明顯更高**。〔[東南](https://www.settour.com.tw/act/gfg/japan/usj/gfp.html)、[可樂](https://www.colatour.com.tw/webDM/trip/japan/fit.html)〕
-- **划算度**：搭廉航＋住市區一般飯店＋不要快通 → 套裝含行李，比分開買省約 NT$1,500–2,000；但**要指定官方飯店、卡中秋固定班次、要快通／2 日券時，套裝航班日期綁死、可選班次少、官方飯店清單有限且旺季先售罄、改退費另收手續費 → DIY 更可控**。〔[KKday 機加酒比較](https://www.kkday.com/zh-tw/blog/163204/asia-japan-self-guided-tour)〕
-- ⚠ **早入園迷思（再次查證）**：**查無任何台灣機加酒套裝含「保證早入園」**；且 USJ 官方「提早入園」套票**已於 2024/10 停售**。海外旅客現唯一「提早約 15 分鐘入園」管道＝**KKday／Klook 綁售的「Early Entry 通行證」**（約 +600 台幣/人、與門票綁套票、數量少易售罄），是票券平台自家綁售，不是旅行社套裝、也不是住官方飯店送的。〔[Let's go Kyoto（2024/10 停售）](https://letsgokyoto.com/usj-ticket-and-special-entry/)、[福寶媽](https://gogojp.tw/universal-studios-japan/)〕
-- 💡 **本案採用做法**：機票自己訂（已訂長榮）＋官方飯店（已訂京阪 Tower）＋ KKday/Klook 買 **2 日票**＋旺季幾乎必買的快通；要早入園再加購 Early Entry 通行證。**機加酒只有在「不挑官方飯店＋搭廉航＋不要快通」時才省。**
 
 ### 台灣部落格／攻略來源清單（2025/02–2026/06）
 
@@ -257,24 +230,12 @@
 | 任天堂入場 | 超級任天堂世界入場方式｜Klook 部落格 | 2025–2026 | https://www.klook.com/zh-TW/blog/usj-super-nintendo-world/ |
 | Power-Up Band | 任天堂世界紀念品＋手環攻略｜遊迪士尼 | 2026 | https://www.yourdisney.com.tw/universalstudiosjapan/super-nintendo-world-store-power-up-band-guide/ |
 | 門票/早入園 | 2026 環球影城門票快通比較｜福寶媽衝日本 | 2026-04 | https://gogojp.tw/universal-studios-japan/ |
-| 飯店 | USJ 官方合作飯店比較＋入住心得｜來一球叭噗 | 2025-10 | https://gototravel.tw/usj-japan-hotel/ |
-| 飯店（園區/市區） | 2026 USJ 飯店推薦懶人包｜Mimi韓 | 2026-05 | https://mimigo.tw/usj-hotels/ |
-| 飯店（實住） | The Park Front Hotel 實住｜涼子是也 | 2025-11 | https://lyes.tw/thepark-front-hotel/ |
-| 飯店（早入園查證） | USJ 住宿推薦／提早入園｜阿波旅行中 | 2025-02 | https://april-travel-blog.com/日本住宿/osaka-usj-hotel/ |
-| 飯店（好處） | 離 USJ 最近的官方飯店比較｜goodhotelreview | 日期不明 | https://goodhotelreview.com/飯店推薦/osaka-usj-hotels-review/ |
-| 機票/航空比較 | 大阪機票攻略：航空比較、訂票技巧｜Maruko | 2026-05 | https://marukojp.com/article/osaka-flight |
-| 機場差異 | 關西機場 KIX vs 伊丹 ITM｜Maruko | 日期不明 | https://marukojp.com/osaka-kansai-airport-difference |
-| 廉航體驗 | 樂桃航空桃園飛關西搭機體驗｜芒果這一家 | 2026-04 | https://mangofamily56.com/peach/ |
+| 早入園停售 | 環球影城門票＋提早入園停售｜Let's go Kyoto | 2025-03 | https://letsgokyoto.com/usj-ticket-and-special-entry/ |
 | KIX→USJ 交通 | 大阪環球影城交通攻略｜來一球叭噗 | 2025-11 | https://gototravel.tw/osaka-go-to-usj-transport/ |
 | App/整理券 | USJ 園區整體攻略（App/整理券/快通）｜小環妞 | 2026-05 | https://wkitty.tw/blog/post/usj |
 | 交通/身高/置物櫃 | 環球影城交通門票設施身高限制｜Elsa | 2024-12 更新 | https://elsa819.com/osaka-usj/ |
 | 人潮預測 | USJ 人潮預測＋減少排隊方式｜來一球叭噗 | 日期不明 | https://gototravel.tw/usj-japan-crowd-forecast/ |
 | 置物櫃/宅配 | 新大阪車站置物櫃與行李寄存｜NAVITIME | 日期不明 | https://japantravel.navitime.com/zh-tw/area/jp/guide/NTJarticle0158-zh-tw/ |
-| 機加酒 | USJ 機加酒自由行（含1日票）｜東南旅遊 | 現行 2026 | https://www.settour.com.tw/act/gfg/japan/usj/gfp.html |
-| 機加酒 | 大阪自由行＋USJ門票 161130011｜雄獅旅遊 | 現行 2026 | https://vacation.liontravel.com/detail/161130011 |
-| 機加酒 | 日本自由行／瘋玩環球影城｜可樂旅遊 | 現行 2026 | https://www.colatour.com.tw/webDM/trip/japan/fit.html |
-| 機加酒 vs DIY | 日本機加酒推薦／DIY 比較｜KKday | 2025–2026 | https://www.kkday.com/zh-tw/blog/163204/asia-japan-self-guided-tour |
-| 早入園停售 | 環球影城門票＋提早入園停售｜Let's go Kyoto | 2025-03 | https://letsgokyoto.com/usj-ticket-and-special-entry/ |
 
 > 整理範圍與限制：以上為台灣中文來源（已排除中國／香港繁中站）；部分文章未標明確發文日，已標「日期不明」。快通版本與票價為 2026 上半年資訊，9 月下旬確切日價仍以 7 月底票價上架後官網為準。
 
