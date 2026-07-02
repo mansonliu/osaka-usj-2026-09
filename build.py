@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
-"""README.md → _site/index.html。
+"""README.md → _site/index.html（頁籤版）。
 
 README.md 是唯一來源（source of truth）；index.html 為自動產物，不進 git。
 本機預覽：pip install markdown && python3 build.py（產出 _site/index.html）。
 正式部署交給 GitHub Actions（.github/workflows/pages.yml），push 後自動建置。
+
+頁籤規則：
+- H1 與其後的引言（第一個 `## ` 之前）＝固定頁首，永遠可見。
+- 以 `## 一、`「中文數字＋、」開頭的 h2 各自成一個頁籤；標籤名見 NUM_LABEL，
+  沒對照到的編號會自動用章節標題前幾個字當標籤（新增「六、…」就自動長出新頁籤）。
+- 不帶編號的 h2（如「✅ 行程已訂定」）與「〇、」歸入「總覽」頁籤（或併入前一個頁籤）。
+- 頁籤狀態寫入 URL hash（#門票快通），可直接分享特定頁籤；列印時自動攤平全部內容。
 """
 import os
 import re
@@ -19,6 +26,16 @@ except ImportError:
 SRC = "README.md"
 OUT_DIR = "_site"
 OUT = os.path.join(OUT_DIR, "index.html")
+
+TAB_OVERVIEW = "總覽"
+NUM_LABEL = {
+    "〇": TAB_OVERVIEW,
+    "一": "門票快通",
+    "二": "逐日行程",
+    "三": "待辦",
+    "四": "經驗整理",
+    "五": "行前準備",
+}
 
 CSS = """
   :root {
@@ -67,11 +84,11 @@ CSS = """
     padding-bottom: 14px;
     border-bottom: 2px solid var(--accent);
   }
-  h2 { font-size: 1.32rem; margin: 40px 0 12px; padding-top: 8px; }
+  h2 { font-size: 1.32rem; margin: 28px 0 12px; padding-top: 4px; }
   h3 { font-size: 1.08rem; margin: 26px 0 10px; }
   h4 { font-size: 0.98rem; margin: 18px 0 8px; color: var(--text-dim); }
   .updated {
-    margin: -8px 0 24px;
+    margin: -8px 0 20px;
     font-size: 0.85rem;
     color: var(--text-dim);
   }
@@ -115,12 +132,77 @@ CSS = """
   }
   thead th { background: var(--surface-2); border-bottom: 2px solid var(--border); white-space: nowrap; }
   tbody tr:nth-child(even) { background: var(--surface); }
+  .tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    background: var(--bg);
+    padding: 10px 0;
+    margin: 0 0 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: 0 0 auto;
+    font: inherit;
+    font-size: 0.92rem;
+    color: var(--text-dim);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 15px;
+    cursor: pointer;
+  }
+  .tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+    font-weight: 600;
+  }
+  .panel[hidden] { display: none; }
+  .panel > h2:first-child { margin-top: 14px; }
   @media (max-width: 480px) {
     body { font-size: 16px; }
     h1 { font-size: 1.45rem; }
     h2 { font-size: 1.2rem; }
     .wrap { padding: 18px 14px 64px; }
   }
+  @media print {
+    .tabs { display: none; }
+    .panel[hidden] { display: block; }
+  }
+"""
+
+JS = """
+(function () {
+  var tabs = [].slice.call(document.querySelectorAll('.tab'));
+  var panels = [].slice.call(document.querySelectorAll('.panel'));
+  function show(id, writeHash) {
+    panels.forEach(function (p) { p.hidden = (p.id !== id); });
+    tabs.forEach(function (t) {
+      var on = (t.dataset.t === id);
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    if (writeHash) {
+      history.replaceState(null, '', '#' + encodeURIComponent(id.slice(2)));
+    }
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      show(t.dataset.t, true);
+      window.scrollTo(0, 0);
+    });
+  });
+  var h = decodeURIComponent(location.hash.slice(1));
+  var target = h && document.getElementById('p-' + h) ? 'p-' + h : panels[0].id;
+  show(target, false);
+})();
 """
 
 
@@ -153,13 +235,8 @@ def last_updated():
     return date, short
 
 
-def build():
-    with open(SRC, encoding="utf-8") as f:
-        md_text = f.read()
-
-    m = re.search(r"^#\s+(.+)$", md_text, re.MULTILINE)
-    title = m.group(1).strip() if m else "九月旅遊計劃"
-
+def md_to_html(md_text):
+    """Markdown 轉 HTML，套用共用後處理：表格橫向捲動、blockquote → callout。"""
     body = markdown.markdown(
         md_text,
         extensions=["tables", "sane_lists", "nl2br"],
@@ -179,16 +256,69 @@ def build():
         cls = "callout warn" if re.search(r"⚠|🔴|注意|提醒", inner) else "callout"
         return f'<div class="{cls}">{inner}</div>'
 
-    body = re.sub(r"<blockquote>(.*?)</blockquote>", to_callout, body, flags=re.DOTALL)
+    return re.sub(r"<blockquote>(.*?)</blockquote>", to_callout, body, flags=re.DOTALL)
+
+
+def short_label(title):
+    """NUM_LABEL 沒對照到的章節，從標題擷取短標籤。"""
+    t = re.sub(r"^[〇一二三四五六七八九十]+、\s*", "", title)
+    t = re.split(r"[（(＋+/／\s]", t)[0]
+    return t[:6] or title[:6]
+
+
+def split_tabs(md_text):
+    """把 README 切成 (頁首 md, [(頁籤標籤, 該籤 md), ...])。"""
+    chunks = re.split(r"(?m)^(?=##\s)", md_text)
+    preamble, sections = chunks[0], chunks[1:]
+
+    tabs = []  # [label, md]
+
+    def add(label, md):
+        if tabs and tabs[-1][0] == label:
+            tabs[-1][1] += "\n" + md
+        else:
+            tabs.append([label, md])
+
+    for sec in sections:
+        sec = re.sub(r"\n-{3,}\s*$", "", sec.rstrip())  # 章節尾端的 --- 是舊分隔線，切籤後不需要
+        title = sec.splitlines()[0][3:].strip()
+        m = re.match(r"([〇一二三四五六七八九十]+)、", title)
+        if m:
+            label = NUM_LABEL.get(m.group(1)) or short_label(title)
+            add(label, sec)
+        else:
+            add(tabs[-1][0] if tabs else TAB_OVERVIEW, sec)
+
+    return preamble, tabs
+
+
+def build():
+    with open(SRC, encoding="utf-8") as f:
+        md_text = f.read()
+
+    m = re.search(r"^#\s+(.+)$", md_text, re.MULTILINE)
+    title = m.group(1).strip() if m else "九月旅遊計劃"
+
+    preamble_md, tabs = split_tabs(md_text)
+    header = md_to_html(preamble_md)
 
     # 在主標題下方插入「最後更新」一行（含 commit 短碼當版本號）
     date, short = last_updated()
     ver = f" · 版本 <code>{short}</code>" if short else ""
     stamp = f'<p class="updated">最後更新：{date}{ver}</p>'
-    if "</h1>" in body:
-        body = body.replace("</h1>", "</h1>\n" + stamp, 1)
+    if "</h1>" in header:
+        header = header.replace("</h1>", "</h1>\n" + stamp, 1)
     else:
-        body = stamp + "\n" + body
+        header = stamp + "\n" + header
+
+    nav = "\n".join(
+        f'<button class="tab" role="tab" data-t="p-{label}" aria-selected="false">{label}</button>'
+        for label, _ in tabs
+    )
+    panels = "\n".join(
+        f'<section class="panel" id="p-{label}" role="tabpanel" hidden>\n{md_to_html(md)}\n</section>'
+        for label, md in tabs
+    )
 
     page = (
         "<!DOCTYPE html>\n"
@@ -200,14 +330,20 @@ def build():
         f"<style>{CSS}</style>\n"
         "</head>\n<body>\n"
         '<div class="wrap">\n'
-        f"{body}\n"
-        "</div>\n</body>\n</html>\n"
+        f"{header}\n"
+        f'<nav class="tabs" role="tablist">\n{nav}\n</nav>\n'
+        f"{panels}\n"
+        "</div>\n"
+        "<noscript><style>.panel[hidden] { display: block; } .tabs { display: none; }</style></noscript>\n"
+        f"<script>{JS}</script>\n"
+        "</body>\n</html>\n"
     )
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(page)
-    print(f"wrote {OUT} ({len(page)} bytes)")
+    labels = "、".join(label for label, _ in tabs)
+    print(f"wrote {OUT} ({len(page)} bytes)；頁籤：{labels}")
 
 
 if __name__ == "__main__":
