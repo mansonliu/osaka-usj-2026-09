@@ -49,6 +49,7 @@ CSS = """
     --accent-soft: #fbeae8;
     --warn: #b9770e;
     --warn-soft: #fdf3e2;
+    --control-border: #aab2bc;
     --maxw: 880px;
   }
   @media (prefers-color-scheme: dark) {
@@ -63,6 +64,7 @@ CSS = """
       --accent-soft: #271d1b;
       --warn: #c49b5c;
       --warn-soft: #262013;
+      --control-border: #626c79;
     }
   }
   * { box-sizing: border-box; }
@@ -153,11 +155,12 @@ CSS = """
     font-size: 0.92rem;
     color: var(--text-dim);
     background: var(--surface);
-    border: 1px solid var(--border);
+    border: 1px solid var(--control-border);
     border-radius: 999px;
     padding: 6px 15px;
     cursor: pointer;
   }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .tab.active {
     background: var(--accent);
     border-color: var(--accent);
