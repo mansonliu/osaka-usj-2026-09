@@ -86,7 +86,13 @@
 
 - 官網票務站 [usjticketing.com](https://www.usjticketing.com/)：票種最齊、Express 可自選時段。缺點是要先註冊會員，且台灣信用卡刷不過非常常見——有台灣旅人 [連試十多張 JCB／Visa／Mastercard 全部失敗](https://vocus.cc/article/651ba36ffd89780001982d26)；PTT 經驗是 JCB 相對容易過；同一張卡重試太頻繁還會被系統擋。刷過了也有海外交易手續費。
 - Klook／KKday 是官方列名的合作通路：中文介面、付款後馬上出 QR code、入園手機掃碼免換票（[來一球叭噗](https://gototravel.tw/klook-universal-studios-japan-ticket/)）。但平台庫存與官網不同步，購買時選的時段只是「預期」，實際時段以出票為準——PTT 有 [反推 KKday 的實例](https://www.ptt.cc/bbs/Japan_Travel/M.1721368371.A.FB3.html)：選早上任天堂時段，出票變成晚上哈利波特＋鬼滅時段，客服稱不保證時段；推文風評 Klook 較 KKday 穩。
-- → 本案結論：**含任天堂保證的 Express 優先在官網買**（時段可自己鎖定，這正是買它的目的）；官網刷卡真的過不了再退而求 Klook。2 日門票與普通 Express 4 對時段較不敏感，哪裡方便哪裡買。
+- 官網列名的台灣正規通路不只 Klook／KKday，還有 Trip.com 與三家旅行社：雄獅、可樂、東南（名單見 [Mimi韓整理](https://mimigo.tw/usj-ticket/)）。旅行社台幣標價、中文客服，但三家賣的品項差很多：
+  - [可樂旅遊](https://www.colatour.com.tw/webDM/tour/japan/usj/ticket.html)票種最齊：1／1.5／2 日券、Express 4／5／7／8／Premium、VIP 導覽都有，部分 Express 組合含任天堂保證入場——本案要的品項齊全，可當官網之外的備援。
+  - [東南旅遊](https://www.settour.com.tw/act/gfg/japan/usj/index2.html)也有 2 日券與各級 Express，另有「1 日券＋任天堂園區入場保證券」組合（只保證進得了任天堂園區、不含快速通關，是 Express 售罄時的預算版備案）。
+  - [雄獅](https://vacation.liontravel.com/detail/161130011)只賣 1 日券＋Express 4／7，無 2 日券、無任天堂保證，不合本案需求。其頁面同時明載：門票僅開放 2 個月內預訂、售出不退換、開票後不能改入園日——旅行社通路一樣不可退改。
+- 日本本地通路（LAWSON 超商機台、JTB 套裝等）是給日本國內客的，海外旅客不實用，僅供知悉。
+- 價格面：全通路都是浮動票價，官網日圓原價最透明；平台與旅行社的台幣價可能差幾十到數百元（匯率與服務費），Klook／KKday 偶有折扣碼或信用卡優惠反而更便宜——但含任天堂 Express 這種搶手票，以「買得到＋時段正確」為先，別為小價差冒險。
+- → 本案結論：**含任天堂保證的 Express 優先在官網買**（時段可自己鎖定，這正是買它的目的）；官網刷卡真的過不了再退而求 Klook；還是不行，可樂旅遊也有含任天堂保證的組合（台幣、中文客服）當第三備援。2 日門票與普通 Express 4 對時段較不敏感，哪裡方便哪裡買。
 - Express 規則嚴格（[Let's go Kyoto](https://letsgokyoto.com/universal-studio-japan-express-pass-guide/)）：售出後不可退改（日期、時段都不能換）；指定時段遲到超過約 30 分鐘系統鎖票、QR 刷不進；每項設施限用一次。本案日期已鎖死，直接買即可，但下單前逐欄核對日期（9/25／9/26）與人數。
 - 門票採浮動票價（依預估人流分級）：買到的價位只適用同級日期，選錯日期等於買錯票（[來一球叭噗](https://gototravel.tw/how-to-buy-usj-ticket/)）——下單時務必再確認是 9/25 起的 2 日券。
 - 萬一含任天堂 Express 已售罄的備案：找其他含相同設施的組合、或回到「入園後用 USJ App 抽任天堂園區入場券」路線（旺日早上 10:30 前就可能發完，就得早起衝園，與「舒適不趕」相違，所以才要現在搶）。
