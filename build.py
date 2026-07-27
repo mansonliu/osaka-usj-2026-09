@@ -49,7 +49,7 @@ CSS = """
     --accent-soft: #fbeae8;
     --warn: #b9770e;
     --warn-soft: #fdf3e2;
-    --control-border: #aab2bc;
+    --control-border: #858e98;
     --maxw: 880px;
   }
   @media (prefers-color-scheme: dark) {
