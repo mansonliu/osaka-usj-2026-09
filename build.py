@@ -53,16 +53,16 @@ CSS = """
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #15171a;
+      --bg: #16181c;
       --surface: #1e2125;
       --surface-2: #262a2f;
-      --text: #e6e8eb;
-      --text-dim: #9aa1a9;
+      --text: #cfd3d9;
+      --text-dim: #8f969f;
       --border: #343941;
-      --accent: #ff7a6b;
-      --accent-soft: #2a1d1b;
-      --warn: #e0a64a;
-      --warn-soft: #2a2114;
+      --accent: #d98a7d;
+      --accent-soft: #271d1b;
+      --warn: #c49b5c;
+      --warn-soft: #262013;
     }
   }
   * { box-sizing: border-box; }
@@ -104,7 +104,7 @@ CSS = """
   ul, ol { padding-left: 1.4em; }
   li { margin: 5px 0; }
   hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
-  strong { font-weight: 700; }
+  strong { font-weight: 600; }
   blockquote { margin: 0; }
   .callout {
     border-left: 4px solid var(--accent);
