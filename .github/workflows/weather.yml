@@ -1,0 +1,48 @@
+name: Daily weather
+
+# 每天 07:00 JST（22:00 UTC）抓大阪環球影城天氣預報 → 存 data/weather.json → 重新建置網頁。
+# 旅程結束（fetch_weather.py 的 TRIP_END）後腳本自動不再寫入；旅程後可整個刪掉這個 workflow。
+
+on:
+  schedule:
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: weather
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python3 fetch_weather.py
+      - name: Commit & push weather snapshot
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/weather.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "天氣資料無變化，不 commit"
+            exit 0
+          fi
+          git commit -m "天氣追蹤：$(TZ=Asia/Tokyo date +%F) 大阪預報快照（自動）"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild & deploy page
+        # GITHUB_TOKEN 的 push 不會觸發 pages.yml 的 push 事件，改用 workflow_dispatch 明確觸發
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
