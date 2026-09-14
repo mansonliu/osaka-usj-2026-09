@@ -1,4 +1,4 @@
-# HANDOFF — 九月旅遊計劃（大阪 USJ 家族行）
+# HANDOFF — 九月旅遊計劃（大阪 USJ）
 
 > 交班單。此 repo 為 **source of truth（GitHub 最新版）**，任何機器接手先 `git pull`。
 > 完整規劃見 `README.md`；定案前的比價留底在 `appendix-pricing.md`、購票歷程留底在 `appendix-tickets.md`（皆不進 HTML）；機票原始數據在 `data/`。
