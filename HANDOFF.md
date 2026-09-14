@@ -16,7 +16,7 @@
 ## 🌤 每日天氣追蹤（2026-09-14 起，全自動、不依賴本機）
 - 網頁頁首（標題與更新戳記下方、引言之前）多一塊「大阪・環球影城 天氣追蹤」：9/24–9/27 四天各一張卡（天氣／高低溫／降雨機率與雨量／風與陣風／紫外線）、強風大雨雷雨自動跳橘色警示、可展開「預報變化」看歷次快照趨勢、附日本氣象廳／中央氣象署颱風頁與 USJ 營運公告連結。
 - 流程：`.github/workflows/weather.yml` 每天 22:00 UTC（07:00 JST）跑 `fetch_weather.py` → Open-Meteo 16 日預報（座標＝USJ 此花區）寫入 `data/weather.json`（歷次快照都保留，key＝JST 日期）→ 由 github-actions[bot] commit push → `gh workflow run pages.yml` 重建網頁（GITHUB_TOKEN 的 push 不會觸發 push 事件，所以用 workflow_dispatch）。
-- `build.py` 的 `render_weather()` 讀 `data/weather.json` 產生區塊；缺檔就不顯示，README 完全不用動。天氣 commit 不碰 README，「最後更新」戳記仍只反映 README。
+- `build.py` 的 `render_weather()` 讀 `data/weather.json` 產生區塊；缺檔就不顯示，README 完全不用動。「最後更新」戳記＝HEAD commit 日期（含 bot 的天氣快照，所以每天都會更新）；README 的最後修訂日另顯示為「行程內容最後修訂」（兩者同日就只顯示一個）。
 - 旅程結束（`fetch_weather.py` 的 `TRIP_END`＝9/27）後腳本自動不再寫入；回國後可整個刪掉 weather.yml（或留著，反正不會再動）。
 - 手動立刻更新：Actions 頁面對 Daily weather 按 Run workflow，或本機 `python3 fetch_weather.py && git commit -am … && git push`。
 - ⚠ 本機或另一台機器要改 README 前一律先 `git pull`：bot 每天都會多一個 commit，不 pull 就會 push 失敗。

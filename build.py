@@ -239,10 +239,11 @@ JS = """
 
 
 def last_updated():
-    """回傳 (日期字串, commit 短碼)；以 README.md 最後一次變更為準。
+    """回傳 (網頁最後更新日, commit 短碼, 行程內容最後修訂日)。
 
+    網頁最後更新＝HEAD（含每日天氣快照的 bot commit），內容修訂＝README.md 最後一次變更。
     GitHub Actions 的 checkout 需 fetch-depth: 0 才有完整歷史；
-    取不到時退而用 HEAD 或 build 當下時間，確保永遠有值。
+    取不到時退而用 build 當下時間，確保永遠有值。
     """
     def git(args):
         try:
@@ -253,18 +254,13 @@ def last_updated():
         except Exception:
             return None
 
-    iso = git(["log", "-1", "--format=%cI", "--", SRC]) or git(
-        ["log", "-1", "--format=%cI"]
-    )
-    short = git(["log", "-1", "--format=%h", "--", SRC]) or git(
-        ["log", "-1", "--format=%h"]
-    )
-
-    if iso:
-        date = iso[:10]
-    else:
-        date = datetime.now().strftime("%Y-%m-%d")
-    return date, short
+    today = datetime.now().strftime("%Y-%m-%d")
+    head_iso = git(["log", "-1", "--format=%cI"])
+    short = git(["log", "-1", "--format=%h"])
+    src_iso = git(["log", "-1", "--format=%cI", "--", SRC]) or head_iso
+    date = head_iso[:10] if head_iso else today
+    content = src_iso[:10] if src_iso else date
+    return date, short, content
 
 
 def md_to_html(md_text):
@@ -478,9 +474,10 @@ def build():
     header = md_to_html(preamble_md)
 
     # 在主標題下方插入「最後更新」一行（含 commit 短碼當版本號）
-    date, short = last_updated()
+    date, short, content = last_updated()
     ver = f" · 版本 <code>{short}</code>" if short else ""
-    stamp = f'<p class="updated">最後更新：{date}{ver}</p>'
+    rev = f" · 行程內容最後修訂：{content}" if content != date else ""
+    stamp = f'<p class="updated">最後更新：{date}{rev}{ver}</p>'
     if "</h1>" in header:
         header = header.replace("</h1>", "</h1>\n" + stamp, 1)
     else:
