@@ -10,13 +10,15 @@ README.md 是唯一來源（source of truth）；index.html 為自動產物，�
 - 以 `## 一、`「中文數字＋、」開頭的 h2 各自成一個頁籤；標籤名見 NUM_LABEL，
   沒對照到的編號會自動用章節標題前幾個字當標籤（新增「六、…」就自動長出新頁籤）。
 - 不帶編號的 h2（如「✅ 行程已訂定」）與「〇、」歸入「總覽」頁籤（或併入前一個頁籤）。
+- 頁首在更新戳記下方插入天氣追蹤區塊（data/weather.json，由 fetch_weather.py 每日產生；缺檔就不顯示）。
 - 頁籤狀態寫入 URL hash（#門票快通），可直接分享特定頁籤；列印時自動攤平全部內容。
 """
+import json
 import os
 import re
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 
 try:
     import markdown
@@ -24,6 +26,7 @@ except ImportError:
     sys.exit("需要 markdown 套件：pip install markdown（或直接 push 交給 GitHub Actions 建置）")
 
 SRC = "README.md"
+WEATHER = os.path.join("data", "weather.json")  # fetch_weather.py 產生，每日自動更新
 OUT_DIR = "_site"
 OUT = os.path.join(OUT_DIR, "index.html")
 
@@ -169,6 +172,32 @@ CSS = """
   }
   .panel[hidden] { display: none; }
   .panel > h2:first-child { margin-top: 14px; }
+  /* 頁首天氣區塊（data/weather.json → render_weather） */
+  .wx {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 12px 14px 10px;
+    margin: 0 0 22px;
+  }
+  .wx-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; margin-bottom: 10px; }
+  .wx-head h2 { margin: 0; font-size: 1.05rem; padding: 0; }
+  .wx-meta { font-size: 0.8rem; color: var(--text-dim); }
+  .wx-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .wx-day { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; line-height: 1.5; }
+  .wx-day .d { font-weight: 600; }
+  .wx-day .tag { color: var(--text-dim); font-size: 0.76rem; }
+  .wx-day .ico { font-size: 1.7rem; line-height: 1.2; margin: 4px 0 0; }
+  .wx-day .t { font-size: 1.02rem; }
+  .wx-day.na { color: var(--text-dim); }
+  .wx .callout { margin: 10px 0 0; font-size: 0.88rem; }
+  .wx-trend { margin-top: 10px; font-size: 0.8rem; }
+  .wx-trend summary { cursor: pointer; color: var(--text-dim); }
+  .wx-trend .table-scroll { margin: 8px 0 0; }
+  .wx-trend table { min-width: 0; font-size: 0.78rem; }
+  .wx-trend th, .wx-trend td { padding: 4px 8px; white-space: nowrap; }
+  .wx-note { font-size: 0.76rem; color: var(--text-dim); margin: 8px 0 0; }
+  @media (max-width: 560px) { .wx-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 480px) {
     body { font-size: 16px; }
     h1 { font-size: 1.45rem; }
@@ -295,6 +324,149 @@ def split_tabs(md_text):
     return preamble, tabs
 
 
+# WMO weather code → (emoji, 台灣慣用描述)
+WMO = {
+    0: ("☀️", "晴"), 1: ("🌤️", "大致晴"), 2: ("⛅", "多雲時晴"), 3: ("☁️", "陰"),
+    45: ("🌫️", "霧"), 48: ("🌫️", "霧"),
+    51: ("🌦️", "毛毛雨"), 53: ("🌦️", "毛毛雨"), 55: ("🌧️", "毛毛雨"),
+    56: ("🌧️", "凍雨"), 57: ("🌧️", "凍雨"),
+    61: ("🌧️", "小雨"), 63: ("🌧️", "中雨"), 65: ("🌧️", "大雨"),
+    66: ("🌧️", "凍雨"), 67: ("🌧️", "凍雨"),
+    71: ("🌨️", "小雪"), 73: ("🌨️", "中雪"), 75: ("🌨️", "大雪"), 77: ("🌨️", "雪粒"),
+    80: ("🌦️", "陣雨"), 81: ("🌧️", "陣雨"), 82: ("⛈️", "強陣雨"),
+    85: ("🌨️", "陣雪"), 86: ("🌨️", "大陣雪"),
+    95: ("⛈️", "雷雨"), 96: ("⛈️", "雷雨夾冰雹"), 99: ("⛈️", "雷雨夾冰雹"),
+}
+TRIP_TAG = {
+    "2026-09-24": "抵達日・KIX 落地",
+    "2026-09-25": "USJ Day 1",
+    "2026-09-26": "USJ Day 2",
+    "2026-09-27": "回程・KIX 傍晚起飛",
+}
+WEEKDAY = "一二三四五六日"
+
+
+def _wmo(code):
+    try:
+        return WMO.get(int(code), ("🌡️", f"代碼 {code}"))
+    except (TypeError, ValueError):
+        return ("❔", "無資料")
+
+
+def _md(date_str):
+    """2026-09-24 → 9/24（四）"""
+    d = datetime.strptime(date_str, "%Y-%m-%d")
+    return f"{d.month}/{d.day}（{WEEKDAY[d.weekday()]}）"
+
+
+def _num(v, nd=0):
+    if v is None:
+        return "–"
+    return f"{v:.{nd}f}"
+
+
+def render_weather():
+    """data/weather.json → 頁首天氣區塊 HTML；沒有資料檔就回傳空字串。"""
+    if not os.path.exists(WEATHER):
+        return ""
+    with open(WEATHER, encoding="utf-8") as f:
+        data = json.load(f)
+    snaps = data.get("snapshots") or {}
+    if not snaps:
+        return ""
+    trip_start, trip_end = data.get("trip", ["2026-09-24", "2026-09-27"])
+    d0 = datetime.strptime(trip_start, "%Y-%m-%d")
+    trip_days = []
+    while d0.strftime("%Y-%m-%d") <= trip_end:
+        trip_days.append(d0.strftime("%Y-%m-%d"))
+        d0 += timedelta(days=1)
+
+    latest_key = max(snaps)
+    latest = snaps[latest_key]["days"]
+    countdown = (datetime.strptime(trip_start, "%Y-%m-%d") - datetime.strptime(latest_key, "%Y-%m-%d")).days
+    if countdown > 0:
+        cd = f"距出發還有 {countdown} 天"
+    elif countdown == 0:
+        cd = "今天出發"
+    else:
+        cd = "旅程進行中" if latest_key <= trip_end else "旅程已結束"
+
+    cards, alerts = [], []
+    for day in trip_days:
+        v = latest.get(day)
+        tag = TRIP_TAG.get(day, "")
+        if not v:
+            cards.append(
+                f'<div class="wx-day na"><div class="d">{_md(day)}</div><div class="tag">{tag}</div>'
+                f'<div class="ico">⏳</div><div>尚未進入 16 日預報範圍</div></div>'
+            )
+            continue
+        ico, desc = _wmo(v.get("weather_code"))
+        gust = v.get("wind_gusts_10m_max") or 0
+        rain = v.get("precipitation_sum") or 0
+        code = v.get("weather_code") or 0
+        if gust >= 60 or rain >= 50 or int(code) in (82, 95, 96, 99):
+            alerts.append(_md(day))
+        cards.append(
+            f'<div class="wx-day"><div class="d">{_md(day)}</div><div class="tag">{tag}</div>'
+            f'<div class="ico">{ico}</div><div>{desc}</div>'
+            f'<div class="t">{_num(v.get("temperature_2m_min"))}～{_num(v.get("temperature_2m_max"))}°C</div>'
+            f'<div>降雨機率 {_num(v.get("precipitation_probability_max"))}%・雨量 {_num(rain, 1)} mm</div>'
+            f'<div>風 {_num(v.get("wind_speed_10m_max"))} km/h・陣風 {_num(gust)}</div>'
+            f'<div>紫外線指數 {_num(v.get("uv_index_max"), 1)}</div></div>'
+        )
+
+    alert_html = ""
+    if alerts:
+        alert_html = (
+            '<div class="callout warn">⚠ 預報出現強風／大雨／雷雨訊號：' + "、".join(alerts)
+            + "。留意颱風動態與航班／USJ 官方公告（颱風三情境見「門票快通」頁籤）。</div>"
+        )
+
+    # 預報變化：每個旅行日在歷次快照中的預報（最近的在上）
+    trend_html = ""
+    keys = sorted(snaps, reverse=True)[:10]
+    if len(keys) >= 2:
+        head = "".join(f"<th>{_md(d)}</th>" for d in trip_days)
+        rows = []
+        for k in keys:
+            cells = []
+            for d in trip_days:
+                v = snaps[k]["days"].get(d)
+                if not v:
+                    cells.append("<td>–</td>")
+                    continue
+                ico, _ = _wmo(v.get("weather_code"))
+                cells.append(
+                    f'<td>{ico} {_num(v.get("temperature_2m_min"))}～{_num(v.get("temperature_2m_max"))}° '
+                    f'雨 {_num(v.get("precipitation_probability_max"))}%</td>'
+                )
+            rows.append(f"<tr><td>{_md(k)} 預報</td>{''.join(cells)}</tr>")
+        trend_html = (
+            f'<details class="wx-trend"><summary>📈 預報變化（近 {len(keys)} 次快照，看趨勢穩不穩）</summary>'
+            f'<div class="table-scroll"><table><thead><tr><th>快照日</th>{head}</tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div></details>'
+        )
+    else:
+        trend_html = '<p class="wx-note">📈 從明天起每天累積一份快照，這裡會顯示旅行日預報的變化趨勢。</p>'
+
+    loc = data.get("location", {}).get("name", "大阪")
+    src = data.get("source", "Open-Meteo")
+    fetched = snaps[latest_key].get("fetched_at", latest_key)[:16].replace("T", " ")
+    return (
+        '<section class="wx" aria-label="天氣追蹤">'
+        f'<div class="wx-head"><h2>🌤 {loc} 天氣追蹤</h2>'
+        f'<span class="wx-meta">預報日 {latest_key}・{cd}・每天 07:00（日本時間）自動更新</span></div>'
+        f'<div class="wx-grid">{"".join(cards)}</div>'
+        f"{alert_html}{trend_html}"
+        f'<p class="wx-note">資料：{src}，抓取 {fetched} JST；超過一週的預報僅供參考，出發前 3 天內的最準。'
+        '颱風動態：<a href="https://www.jma.go.jp/bosai/map.html#5/34.5/137/&elem=root&typhoon=all&contents=typhoon" target="_blank" rel="noopener">日本氣象廳</a>・'
+        '<a href="https://www.cwa.gov.tw/V8/C/P/Typhoon/ty.html" target="_blank" rel="noopener">中央氣象署</a>・'
+        '<a href="https://www.usj.co.jp/web/ja/jp/park/schedule" target="_blank" rel="noopener">USJ 營運公告</a></p>'
+        "</section>"
+    )
+
+
 def build():
     with open(SRC, encoding="utf-8") as f:
         md_text = f.read()
@@ -313,6 +485,11 @@ def build():
         header = header.replace("</h1>", "</h1>\n" + stamp, 1)
     else:
         header = stamp + "\n" + header
+
+    # 頁首最上方（更新戳記之後、引言之前）插入天氣追蹤區塊；沒有 data/weather.json 就略過
+    wx = render_weather()
+    if wx:
+        header = header.replace(stamp, stamp + "\n" + wx, 1)
 
     nav = "\n".join(
         f'<button class="tab" role="tab" data-t="p-{label}" aria-selected="false">{label}</button>'
