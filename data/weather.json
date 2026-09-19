@@ -833,6 +833,171 @@
      "uv_index_max": 1.25
     }
    }
+  },
+  "2026-09-19": {
+   "fetched_at": "2026-09-19T09:00+09:00",
+   "days": {
+    "2026-09-19": {
+     "weather_code": 3,
+     "temperature_2m_max": 29.3,
+     "temperature_2m_min": 23.3,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 10,
+     "wind_speed_10m_max": 16.7,
+     "wind_gusts_10m_max": 33.5,
+     "uv_index_max": 6.75
+    },
+    "2026-09-20": {
+     "weather_code": 61,
+     "temperature_2m_max": 27.0,
+     "temperature_2m_min": 24.0,
+     "precipitation_sum": 3.5,
+     "precipitation_probability_max": 8,
+     "wind_speed_10m_max": 28.5,
+     "wind_gusts_10m_max": 50.0,
+     "uv_index_max": 6.1
+    },
+    "2026-09-21": {
+     "weather_code": 65,
+     "temperature_2m_max": 26.6,
+     "temperature_2m_min": 23.6,
+     "precipitation_sum": 94.7,
+     "precipitation_probability_max": 35,
+     "wind_speed_10m_max": 39.0,
+     "wind_gusts_10m_max": 54.7,
+     "uv_index_max": 2.5
+    },
+    "2026-09-22": {
+     "weather_code": 2,
+     "temperature_2m_max": 28.1,
+     "temperature_2m_min": 21.2,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 14,
+     "wind_speed_10m_max": 24.3,
+     "wind_gusts_10m_max": 49.7,
+     "uv_index_max": 6.75
+    },
+    "2026-09-23": {
+     "weather_code": 51,
+     "temperature_2m_max": 28.3,
+     "temperature_2m_min": 20.2,
+     "precipitation_sum": 0.9,
+     "precipitation_probability_max": 31,
+     "wind_speed_10m_max": 8.8,
+     "wind_gusts_10m_max": 25.9,
+     "uv_index_max": 5.85
+    },
+    "2026-09-24": {
+     "weather_code": 3,
+     "temperature_2m_max": 28.6,
+     "temperature_2m_min": 21.5,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 20,
+     "wind_speed_10m_max": 15.0,
+     "wind_gusts_10m_max": 36.0,
+     "uv_index_max": 6.1
+    },
+    "2026-09-25": {
+     "weather_code": 3,
+     "temperature_2m_max": 26.9,
+     "temperature_2m_min": 20.6,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 13,
+     "wind_speed_10m_max": 10.1,
+     "wind_gusts_10m_max": 30.6,
+     "uv_index_max": 4.5
+    },
+    "2026-09-26": {
+     "weather_code": 80,
+     "temperature_2m_max": 26.0,
+     "temperature_2m_min": 20.4,
+     "precipitation_sum": 7.8,
+     "precipitation_probability_max": 78,
+     "wind_speed_10m_max": 8.2,
+     "wind_gusts_10m_max": 22.7,
+     "uv_index_max": 6.45
+    },
+    "2026-09-27": {
+     "weather_code": 95,
+     "temperature_2m_max": 26.9,
+     "temperature_2m_min": 20.5,
+     "precipitation_sum": 31.8,
+     "precipitation_probability_max": 80,
+     "wind_speed_10m_max": 28.5,
+     "wind_gusts_10m_max": 85.3,
+     "uv_index_max": 6.3
+    },
+    "2026-09-28": {
+     "weather_code": 81,
+     "temperature_2m_max": 22.7,
+     "temperature_2m_min": 21.3,
+     "precipitation_sum": 25.2,
+     "precipitation_probability_max": 49,
+     "wind_speed_10m_max": 7.6,
+     "wind_gusts_10m_max": 34.2,
+     "uv_index_max": 5.65
+    },
+    "2026-09-29": {
+     "weather_code": 3,
+     "temperature_2m_max": 24.6,
+     "temperature_2m_min": 20.2,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 35,
+     "wind_speed_10m_max": 11.2,
+     "wind_gusts_10m_max": 29.9,
+     "uv_index_max": 2.75
+    },
+    "2026-09-30": {
+     "weather_code": 3,
+     "temperature_2m_max": 23.8,
+     "temperature_2m_min": 19.0,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 28,
+     "wind_speed_10m_max": 8.5,
+     "wind_gusts_10m_max": 25.9,
+     "uv_index_max": 6.05
+    },
+    "2026-10-01": {
+     "weather_code": 51,
+     "temperature_2m_max": 23.3,
+     "temperature_2m_min": 18.0,
+     "precipitation_sum": 0.6,
+     "precipitation_probability_max": 18,
+     "wind_speed_10m_max": 8.5,
+     "wind_gusts_10m_max": 22.3,
+     "uv_index_max": 0.45
+    },
+    "2026-10-02": {
+     "weather_code": 2,
+     "temperature_2m_max": 25.6,
+     "temperature_2m_min": 18.7,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 14,
+     "wind_speed_10m_max": 13.5,
+     "wind_gusts_10m_max": 34.2,
+     "uv_index_max": 0.4
+    },
+    "2026-10-03": {
+     "weather_code": 0,
+     "temperature_2m_max": 25.7,
+     "temperature_2m_min": 17.7,
+     "precipitation_sum": 0.0,
+     "precipitation_probability_max": 18,
+     "wind_speed_10m_max": 10.1,
+     "wind_gusts_10m_max": 29.5,
+     "uv_index_max": 6.1
+    },
+    "2026-10-04": {
+     "weather_code": null,
+     "temperature_2m_max": null,
+     "temperature_2m_min": null,
+     "precipitation_sum": null,
+     "precipitation_probability_max": 16,
+     "wind_speed_10m_max": null,
+     "wind_gusts_10m_max": null,
+     "uv_index_max": null
+    }
+   }
   }
  },
  "source": "Open-Meteo（best_match 模型，16 日預報）"
