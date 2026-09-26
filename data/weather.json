@@ -2155,5 +2155,30 @@
    }
   }
  },
- "source": "Open-Meteo（best_match 模型，16 日預報）"
+ "source": "Open-Meteo（best_match 模型，16 日預報）",
+ "actuals": {
+  "2026-09-24": {
+   "precipitation_sum": 0.0,
+   "precipitation_max_1h": 0.0,
+   "temperature_2m_max": 30.2,
+   "temperature_2m_min": 22.5,
+   "wind_speed_max_ms": 5.1,
+   "wind_gust_max_ms": 8.5,
+   "sunshine_h": 8.5,
+   "weather_day": "晴一時曇",
+   "weather_night": "曇時々晴"
+  },
+  "2026-09-25": {
+   "precipitation_sum": 0.0,
+   "precipitation_max_1h": 0.0,
+   "temperature_2m_max": 29.9,
+   "temperature_2m_min": 20.9,
+   "wind_speed_max_ms": 3.7,
+   "wind_gust_max_ms": 5.6,
+   "sunshine_h": 7.2,
+   "weather_day": "曇一時晴",
+   "weather_night": "曇一時雨"
+  }
+ },
+ "actuals_source": "日本氣象廳 大阪氣象台（中央區）實測"
 }

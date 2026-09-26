@@ -1,7 +1,7 @@
 name: Daily weather
 
 # 每天 07:00 JST（22:00 UTC）抓大阪環球影城天氣預報 → 存 data/weather.json → 重新建置網頁。
-# 旅程結束（fetch_weather.py 的 TRIP_END）後腳本自動不再寫入；旅程後可整個刪掉這個 workflow。
+# 已過的旅行日另補日本氣象廳大阪實測（actuals）。旅程結束（TRIP_END）隔天補完最後一天實測後，腳本自動不再寫入；旅程後可整個刪掉這個 workflow。
 
 on:
   schedule:

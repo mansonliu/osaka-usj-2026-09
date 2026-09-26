@@ -191,6 +191,8 @@ CSS = """
   .wx-day .ico { font-size: 1.7rem; line-height: 1.2; margin: 4px 0 0; }
   .wx-day .t { font-size: 1.02rem; }
   .wx-day.na { color: var(--text-dim); }
+  .wx-day .lbl { color: var(--text-dim); font-size: 0.74rem; margin-top: 2px; }
+  .wx-day .fc { border-top: 1px dashed var(--border); margin-top: 6px; padding-top: 4px; color: var(--text-dim); font-size: 0.78rem; }
   .wx .callout { margin: 10px 0 0; font-size: 0.88rem; }
   .wx-trend { margin-top: 10px; font-size: 0.8rem; }
   .wx-trend summary { cursor: pointer; color: var(--text-dim); }
@@ -362,6 +364,61 @@ def _num(v, nd=0):
     return f"{v:.{nd}f}"
 
 
+# 氣象廳天氣概況（日文）→ 台灣慣用說法
+JMA_WX = [("快晴", "晴朗"), ("薄曇", "薄雲"), ("曇", "陰"), ("時々", "時"), ("一時", "短暫"),
+          ("後", "轉"), ("大雨", "大雨"), ("雷", "雷"), ("を伴う", ""), ("を伴い", "")]
+
+
+def _jma_desc(txt):
+    t = txt or ""
+    for a, b in JMA_WX:
+        t = t.replace(a, b)
+    return t or "–"
+
+
+def _jma_ico(txt):
+    t = txt or ""
+    if "雷" in t:
+        return "⛈️"
+    if "雨" in t:
+        return "🌧️" if t.startswith("雨") or "大雨" in t else "🌦️"
+    if t.startswith("晴") or t.startswith("快晴"):
+        return "☀️" if "曇" not in t else "🌤️"
+    if "曇" in t:
+        return "⛅" if "晴" in t else "☁️"
+    return "🌡️"
+
+
+def _kmh(ms):
+    return None if ms is None else ms * 3.6
+
+
+def _past_card(day, tag, act, fc, fc_key, fc_at):
+    """已過完的旅行日：上半實測、下半前一天的預報。"""
+    parts = [f'<div class="wx-day past"><div class="d">{_md(day)}</div><div class="tag">{tag}・已過</div>']
+    if act:
+        dwx, nwx = act.get("weather_day"), act.get("weather_night")
+        parts.append(
+            f'<div class="lbl">實際</div>'
+            f'<div class="ico">{_jma_ico(dwx)}</div><div>白天 {_jma_desc(dwx)}・晚上 {_jma_desc(nwx)}</div>'
+            f'<div class="t">{_num(act.get("temperature_2m_min"), 1)}～{_num(act.get("temperature_2m_max"), 1)}°C</div>'
+            f'<div>雨量 {_num(act.get("precipitation_sum"), 1)} mm</div>'
+            f'<div>最大陣風 {_num(_kmh(act.get("wind_gust_max_ms")))} km/h・日照 {_num(act.get("sunshine_h"), 1)} 小時</div>'
+        )
+    else:
+        parts.append('<div class="lbl">實際</div><div class="ico">⏳</div><div>實測尚未取得（隔天 07:00 自動補上）</div>')
+    if fc:
+        ico, desc = _wmo(fc.get("weather_code"))
+        parts.append(
+            f'<div class="fc"><div class="lbl">前一天預報（{fc_at}）</div>'
+            f'<div>{ico} {desc}・{_num(fc.get("temperature_2m_min"))}～{_num(fc.get("temperature_2m_max"))}°C</div>'
+            f'<div>降雨機率 {_num(fc.get("precipitation_probability_max"))}%・雨量 {_num(fc.get("precipitation_sum"), 1)} mm</div>'
+            f'<div>陣風 {_num(fc.get("wind_gusts_10m_max"))} km/h</div></div>'
+        )
+    parts.append("</div>")
+    return "".join(parts)
+
+
 def render_weather():
     """data/weather.json → 頁首天氣區塊 HTML；沒有資料檔就回傳空字串。"""
     if not os.path.exists(WEATHER):
@@ -380,6 +437,7 @@ def render_weather():
 
     latest_key = max(snaps)
     latest = snaps[latest_key]["days"]
+    actuals = data.get("actuals") or {}
     countdown = (datetime.strptime(trip_start, "%Y-%m-%d") - datetime.strptime(latest_key, "%Y-%m-%d")).days
     if countdown > 0:
         cd = f"距出發還有 {countdown} 天"
@@ -392,6 +450,14 @@ def render_weather():
     for day in trip_days:
         v = latest.get(day)
         tag = TRIP_TAG.get(day, "")
+        if day in actuals or day < latest_key:
+            # 已過完：前一天的快照（沒有就取當天以前最近的一份）
+            prev = [k for k in snaps if k < day and day in snaps[k].get("days", {})]
+            fc_key = max(prev) if prev else None
+            fc = snaps[fc_key]["days"][day] if fc_key else None
+            fc_at = _md(fc_key) if fc_key else ""
+            cards.append(_past_card(day, tag, actuals.get(day), fc, fc_key, fc_at))
+            continue
         if not v:
             cards.append(
                 f'<div class="wx-day na"><div class="d">{_md(day)}</div><div class="tag">{tag}</div>'
@@ -450,13 +516,17 @@ def render_weather():
     loc = data.get("location", {}).get("name", "大阪")
     src = data.get("source", "Open-Meteo")
     fetched = snaps[latest_key].get("fetched_at", latest_key)[:16].replace("T", " ")
+    act_src = ""
+    if actuals:
+        act_src = (f'已過的日子：上半＝{data.get("actuals_source", "日本氣象廳實測")}，'
+                   '下半＝前一天早上抓的預報；氣象台在市中心、離 USJ 約 8 公里，雨量可能有落差。')
     return (
         '<section class="wx" aria-label="天氣追蹤">'
         f'<div class="wx-head"><h2>🌤 {loc} 天氣追蹤</h2>'
         f'<span class="wx-meta">預報日 {latest_key}・{cd}・每天 07:00（日本時間）自動更新</span></div>'
         f'<div class="wx-grid">{"".join(cards)}</div>'
         f"{alert_html}{trend_html}"
-        f'<p class="wx-note">資料：{src}，抓取 {fetched} JST；超過一週的預報僅供參考，出發前 3 天內的最準。'
+        f'<p class="wx-note">資料：{src}，抓取 {fetched} JST；超過一週的預報僅供參考，出發前 3 天內的最準。{act_src}'
         '颱風動態：<a href="https://www.jma.go.jp/bosai/map.html#5/34.5/137/&elem=root&typhoon=all&contents=typhoon" target="_blank" rel="noopener">日本氣象廳</a>・'
         '<a href="https://www.cwa.gov.tw/V8/C/P/Typhoon/ty.html" target="_blank" rel="noopener">中央氣象署</a>・'
         '<a href="https://www.usj.co.jp/web/ja/jp/park/schedule" target="_blank" rel="noopener">USJ 營運公告</a></p>'
