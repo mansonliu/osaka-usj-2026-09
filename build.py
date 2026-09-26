@@ -410,7 +410,7 @@ def _past_card(day, tag, act, fc, fc_key, fc_at):
     if fc:
         ico, desc = _wmo(fc.get("weather_code"))
         parts.append(
-            f'<div class="fc"><div class="lbl">前一天預報（{fc_at}）</div>'
+            f'<div class="fc"><div class="lbl">前一天預報・{fc_at} 抓</div>'
             f'<div>{ico} {desc}・{_num(fc.get("temperature_2m_min"))}～{_num(fc.get("temperature_2m_max"))}°C</div>'
             f'<div>降雨機率 {_num(fc.get("precipitation_probability_max"))}%・雨量 {_num(fc.get("precipitation_sum"), 1)} mm</div>'
             f'<div>陣風 {_num(fc.get("wind_gusts_10m_max"))} km/h</div></div>'
