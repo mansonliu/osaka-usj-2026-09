@@ -2352,6 +2352,17 @@
    "wind_speed_max_ms": 5.2,
    "wind_gust_max_ms": 7.4,
    "sunshine_h": 0.0,
+   "weather_day": "雨時々曇",
+   "weather_night": "雨後曇"
+  },
+  "2026-09-27": {
+   "precipitation_sum": 5.5,
+   "precipitation_max_1h": 2.0,
+   "temperature_2m_max": 25.1,
+   "temperature_2m_min": 20.8,
+   "wind_speed_max_ms": 3.4,
+   "wind_gust_max_ms": 5.6,
+   "sunshine_h": 0.3,
    "weather_day": "",
    "weather_night": ""
   }
